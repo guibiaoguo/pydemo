@@ -60,8 +60,14 @@ print("域名提取测试！")
 re_domain = r"(?<=[http|https]://)(((((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))(:\d{,8})?)|([.\w-]*))((?=/)|(?!/))"
 re_hdomain = r"(?<=)(http|https)://(((((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))(:\d{,8})?)|([.\w-]*))((?=/)|(?!/))"
 
-print(re.search(re_domain,"http://m.31xs.com").group())
+print(re.search(re_domain,"http://m.31xs.com/22").group())
 print(re.search(re_domain,"https://m.3li.cc").group())
-print(re.search(re_hdomain,"https://m.3li.cc").groups())
+print(re.search(re_hdomain,"https://www.qidian.com 🌸444444"))
+print(re.search(re_domain,re.sub('[^A-Za-z0-9:/.]+', '/','https://www.qidian.com/🌸444444')))
+print(re.search(re_domain,re.sub('[^A-Za-z0-9:/.]+', '/','https://www.qidian.com-By')))
+turl = re.sub('/.*', '', 'https://www.qidian.com/🌸aaa')
+print(turl)
+print(re.search(re_domain,'https://www.b5200.net/By'))
 print(requests.head("http://www.lwtxt.cc"))
-x.get(key)).group() if re.match(re_domain, x.get(key)) else x.get(key)
+print(len({'a':1}))
+print("" != None)
