@@ -7,7 +7,7 @@ re_domain = r"(?<=[http|https]://)(((((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.
 
 re_hdomain = r"(?<=)(http|https)://(((((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))(:\d{,8})?)|([.\w-]*))((?=/)|(?!/))"
 
-logging.basicConfig(level=logging.ERROR,filename='group.log')
+logging.basicConfig(level=logging.ERROR,filename='group1.log')
 
 def deleteDuplicate(li):
     func = lambda x, y: x if y in x else x + [y]
@@ -101,6 +101,7 @@ def vaildUrl(book):
     try:
         url1 = re.search(re_hdomain,book.get('bookSourceUrl')).group()
         print(url1)
+        # proxies = {'http': 'http://localhost:7890', 'https': 'http://localhost:7890'}
         page = requests.head(url1);
         return page.status_code == 200
     except Exception as e:
@@ -137,21 +138,30 @@ def jsontoM3U8(path,wfile):
     key = []
     key.extend(keylist3)
     key.extend(key2list3)
-    key.extend(key1list)
+    # key.extend(key1list)
     key.extend(key2list)
     # input("开始过滤数据")
     bookSuccessSet = list(deleteDuplicateMD5Key(bookFaillist2).values());
     print(len(bookSuccessSet))
     bookFaillistSet = list(filter(lambda x : re.search(re_domain,x.get('bookSourceUrl')).group() not in key if re.search(re_domain, x.get('bookSourceUrl')) else x.get('bookSourceUrl') not in key,bookSuccessSet))    
     print(len(bookFaillistSet))
-    bookSuccessSetGroup = deleteDuplicateGroup(bookSuccessSet, 'bookSourceUrl')
+    bookSuccessSetGroup = deleteDuplicateGroup(bookFaillistSet, 'bookSourceUrl')
+    print(len(bookSuccessSetGroup))
     for k,v in bookSuccessSetGroup.items():
         logging.error(f'{k}:{len(v)}')
-    bookSuccessSet1 = list(deleteDuplicateKey(bookSuccessSet, 'bookSourceUrl').values());
+    bookSuccessSet1 = list(deleteDuplicateKey(bookFaillistSet, 'bookSourceUrl').values());
     print(len(bookSuccessSet1))
 
-    with open('fail3.1.json','w',encoding='utf-8') as f:
+    with open('fail3.3.json','w',encoding='utf-8') as f:
         json.dump(bookFaillistSet, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))    
+
+    with open('fail3.4.json','w',encoding='utf-8') as f:
+        json.dump(bookSuccessSet1, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))    
+
+    # bookSuccessRListSet = list(filter(vaildUrl,bookFaillistSet))
+    # print(len(bookSuccessRListSet))
+    # with open('fail3.2.json','w',encoding='utf-8') as f:
+    #     json.dump(bookSuccessRListSet, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))
     # bookFaillistSet = list(filter(lambda x: re.search(re_domain,x.get('bookSourceUrl')).group() not in key1,deleteDuplicateMD5Key(bookFaillist,'bookSourceUrl').values()))
     # bookSuccesslistSet = list(filter(lambda x: re.search(re_domain,x.get('bookSourceUrl')).group() not in key,deleteDuplicateMD5Key(bookSuccesslist, 'bookSourceUrl').values()))
     # print(len(bookFaillistSet))

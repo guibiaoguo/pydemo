@@ -77,6 +77,7 @@ def jsontoM3U8(path,wfile):
     keylist1, bookFaillist1, key2list1, bookSuccesslist1 = jsonToList(os.path.join(path,'success'),'bookSourceUrl','ruleBookContent')
     keylist2, bookFaillist2, key2list2, bookSuccesslist2 = jsonToList(os.path.join(path,'legado'),'bookSourceUrl','ruleBookContent.content')
     keylist3, bookFaillist3, key2list3, bookSuccesslist3 = jsonToList(os.path.join(path,'fail3'),'bookSourceUrl','ruleBookContent')
+    keylist4, bookFaillist4, key2list4, bookSuccesslist4 = jsonToList(os.path.join(path,'fail3.1'),'bookSourceUrl','ruleBookContent.content')
 
     print(len(key1list))
     print(len(set(key1list)))
@@ -99,6 +100,13 @@ def jsontoM3U8(path,wfile):
     print(len(bookFaillist2))
     print(len(bookSuccesslist2))
 
+    print(len(keylist4))
+    print(len(set(keylist4)))
+    print(len(key2list4))
+    print(len(set(key2list4)))             
+    print(len(bookFaillist4))
+    print(len(bookSuccesslist4))
+
     key = []
     key.extend(keylist1)
     key.extend(key2list1)
@@ -112,6 +120,7 @@ def jsontoM3U8(path,wfile):
     key1 = []
     key1.extend(key)
     key1.extend(key2list)
+    key1.extend(keylist4)
     bookFaillistSet = list(filter(lambda x: re.search(re_domain,x.get('bookSourceUrl')).group() not in key1, deleteDuplicateKey(bookFaillist,'bookSourceUrl').values()))
     bookSuccesslistSet = list(filter(lambda x: re.search(re_domain,x.get('bookSourceUrl')).group() not in key, deleteDuplicateKey(bookSuccesslist, 'bookSourceUrl').values()))
     print(len(bookFaillistSet))
@@ -120,15 +129,15 @@ def jsontoM3U8(path,wfile):
     bookSuccessRList = []
     bookSuccessRList.extend(bookFaillistSet)
     bookSuccessRList.extend(bookSuccesslistSet)
-    input('请允许')
-    bookSuccessRListSet = list(filter(vaildUrl,bookSuccessRList))
-    print(len(bookSuccessRListSet))
-    with open('fail4.json','w',encoding='utf-8') as f:
+    # input('请允许')
+    # bookSuccessRListSet = list(filter(vaildUrl,bookSuccessRList))
+    # print(len(bookSuccessRListSet))
+    with open('fail8.json','w',encoding='utf-8') as f:
         json.dump(bookFaillistSet, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))
-    with open('fail5.json','w',encoding='utf-8') as f:
+    with open('fail9.json','w',encoding='utf-8') as f:
         json.dump(bookSuccesslistSet, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))
-    with open('fail7.json','w',encoding='utf-8') as f:
-        json.dump(bookSuccessRListSet, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))
+    # with open('fail10.json','w',encoding='utf-8') as f:
+    #     json.dump(bookSuccessRListSet, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))
 if __name__ == '__main__':
     # toM3U8("E:\\workspace\\hikerView\\tv\\202006")
     # readM3U8("C:\\Users\\bill\\Desktop\\Crack\\直播-online.m3u8")

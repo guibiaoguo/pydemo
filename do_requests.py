@@ -25,7 +25,10 @@ r = requests.post('https://accounts.douban.com/login', data={'form_email': 'abc@
 
 # r = requests.post(url, files=upload_files)
 # 
-
+url = "https://www.baidu.com"
 cs = {'token': '12345', 'status': 'working'}
 r = requests.get(url, cookies=cs)
 r = requests.get(url, timeout=2.5)
+
+m3u8 = requests.get("http://183.207.249.14/PLTV/3/224/3221225567/index.m3u8")
+print(str(m3u8.content,'utf-8',errors='ignore'))

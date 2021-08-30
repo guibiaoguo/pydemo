@@ -10,6 +10,11 @@ print(d['Jack'])
 d['Jack'] = 88
 print(d['Jack'])
 print(d.get('Thomas'))
+try:
+    print(d.Thomas)
+except Exception as e:
+    print(e)
+
 print(d.get('Thomas',-2))
 print(d.pop('Bob'))
 print(d)
@@ -47,3 +52,11 @@ def deleteDuplicateKey(li,key):
     return li
 
 print(deleteDuplicateKey(li,'a'))
+
+d={'ruleContent':{'content':'123'}}
+print(d.get('ruleContent').get('content'))
+for k,v in d.items():
+    print(k)
+    print(v)
+
+print(d.keys())

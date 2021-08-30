@@ -127,6 +127,10 @@ def jsontoM3U8(path,wfile):
 
     with open('success6.json','w',encoding='utf-8') as f:
         json.dump(bookSuccessSet, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))    
+
+    with open('success8.json','w',encoding='utf-8') as f:
+        json.dump(bookSuccessSet1, f, ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':'))
+
     # bookFaillistSet = list(filter(lambda x: re.search(re_domain,x.get('bookSourceUrl')).group() not in key1,deleteDuplicateMD5Key(bookFaillist,'bookSourceUrl').values()))
     # bookSuccesslistSet = list(filter(lambda x: re.search(re_domain,x.get('bookSourceUrl')).group() not in key,deleteDuplicateMD5Key(bookSuccesslist, 'bookSourceUrl').values()))
     # print(len(bookFaillistSet))

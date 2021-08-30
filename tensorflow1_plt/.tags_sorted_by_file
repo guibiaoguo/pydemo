@@ -1,0 +1,557 @@
+X	tensorflow_autodecoder.py	/^X = tf.placeholder("float", [None, n_input])$/;"	v
+batch_size	tensorflow_autodecoder.py	/^batch_size = 256$/;"	v
+biases	tensorflow_autodecoder.py	/^biases = {$/;"	v
+compat	tensorflow_autodecoder.py	/^import tensorflow.compat.v1 as tf$/;"	i
+cost	tensorflow_autodecoder.py	/^cost = tf.reduce_mean(tf.pow(y_true - y_pred, 2))$/;"	v
+decoder	tensorflow_autodecoder.py	/^def decoder(x):$/;"	f
+decoder_op	tensorflow_autodecoder.py	/^decoder_op = decoder(encoder_op)$/;"	v
+display_step	tensorflow_autodecoder.py	/^display_step = 1$/;"	v
+encoder	tensorflow_autodecoder.py	/^def encoder(x):$/;"	f
+encoder_op	tensorflow_autodecoder.py	/^encoder_op = encoder(X)$/;"	v
+encoder_result	tensorflow_autodecoder.py	/^    encoder_result = sess.run(encoder_op, feed_dict={X: mnist.test.images})$/;"	v
+init	tensorflow_autodecoder.py	/^        init = tf.global_variables_initializer()$/;"	v
+init	tensorflow_autodecoder.py	/^        init = tf.initialize_all_variables()$/;"	v
+input_data	tensorflow_autodecoder.py	/^import input_data$/;"	i
+learning_rate	tensorflow_autodecoder.py	/^learning_rate = 0.01    # 0.01 this learning rate will be better! Tested$/;"	v
+matplotlib	tensorflow_autodecoder.py	/^import os,matplotlib.pyplot as plt$/;"	i
+mnist	tensorflow_autodecoder.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=False)$/;"	v
+n_hidden_1	tensorflow_autodecoder.py	/^n_hidden_1 = 128$/;"	v
+n_hidden_2	tensorflow_autodecoder.py	/^n_hidden_2 = 64$/;"	v
+n_hidden_3	tensorflow_autodecoder.py	/^n_hidden_3 = 10$/;"	v
+n_hidden_4	tensorflow_autodecoder.py	/^n_hidden_4 = 2$/;"	v
+n_input	tensorflow_autodecoder.py	/^n_input = 784  # MNIST data input (img shape: 28*28)$/;"	v
+np	tensorflow_autodecoder.py	/^import numpy as np$/;"	i
+optimizer	tensorflow_autodecoder.py	/^optimizer = tf.train.AdamOptimizer(learning_rate).minimize(cost)$/;"	v
+os	tensorflow_autodecoder.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_autodecoder.py	/^import os,matplotlib.pyplot as plt$/;"	i
+seq2seq	tensorflow_autodecoder.py	/^import seq_loss as seq2seq$/;"	i
+tensorflow	tensorflow_autodecoder.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_autodecoder.py	/^import tensorflow.compat.v1 as tf$/;"	i
+total_batch	tensorflow_autodecoder.py	/^    total_batch = int(mnist.train.num_examples\/batch_size)$/;"	v
+training_epochs	tensorflow_autodecoder.py	/^training_epochs = 10$/;"	v
+weights	tensorflow_autodecoder.py	/^weights = {$/;"	v
+y_pred	tensorflow_autodecoder.py	/^y_pred = decoder_op$/;"	v
+y_true	tensorflow_autodecoder.py	/^y_true = X$/;"	v
+X	tensorflow_autoencoder.py	/^X = tf.placeholder("float", [None, n_input])$/;"	v
+batch_size	tensorflow_autoencoder.py	/^batch_size = 256$/;"	v
+biases	tensorflow_autoencoder.py	/^biases = {$/;"	v
+compat	tensorflow_autoencoder.py	/^import tensorflow.compat.v1 as tf$/;"	i
+cost	tensorflow_autoencoder.py	/^cost = tf.reduce_mean(tf.pow(y_true - y_pred, 2))$/;"	v
+decoder	tensorflow_autoencoder.py	/^def decoder(x):$/;"	f
+decoder_op	tensorflow_autoencoder.py	/^decoder_op = decoder(encoder_op)$/;"	v
+display_step	tensorflow_autoencoder.py	/^display_step = 1$/;"	v
+encode_decode	tensorflow_autoencoder.py	/^    encode_decode = sess.run($/;"	v
+encoder	tensorflow_autoencoder.py	/^def encoder(x):$/;"	f
+encoder_op	tensorflow_autoencoder.py	/^encoder_op = encoder(X)$/;"	v
+examples_to_show	tensorflow_autoencoder.py	/^examples_to_show = 10$/;"	v
+init	tensorflow_autoencoder.py	/^    init = tf.global_variables_initializer()$/;"	v
+input_data	tensorflow_autoencoder.py	/^from tensorflow.core.example import input_data$/;"	i
+learning_rate	tensorflow_autoencoder.py	/^learning_rate = 0.01$/;"	v
+matplotlib	tensorflow_autoencoder.py	/^import os,matplotlib.pyplot as plt$/;"	i
+mnist	tensorflow_autoencoder.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=False)$/;"	v
+n_hidden_1	tensorflow_autoencoder.py	/^n_hidden_1 = 256 # 1st layer num features$/;"	v
+n_hidden_2	tensorflow_autoencoder.py	/^n_hidden_2 = 128 # 2nd layer num features$/;"	v
+n_input	tensorflow_autoencoder.py	/^n_input = 784  # MNIST data input (img shape: 28*28)$/;"	v
+np	tensorflow_autoencoder.py	/^import numpy as np$/;"	i
+optimizer	tensorflow_autoencoder.py	/^optimizer = tf.train.AdamOptimizer(learning_rate).minimize(cost)$/;"	v
+os	tensorflow_autoencoder.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_autoencoder.py	/^import os,matplotlib.pyplot as plt$/;"	i
+tensorflow	tensorflow_autoencoder.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_autoencoder.py	/^import tensorflow.compat.v1 as tf$/;"	i
+total_batch	tensorflow_autoencoder.py	/^    total_batch = int(mnist.train.num_examples\/batch_size)$/;"	v
+training_epochs	tensorflow_autoencoder.py	/^training_epochs = 20$/;"	v
+weights	tensorflow_autoencoder.py	/^weights = {$/;"	v
+y_pred	tensorflow_autoencoder.py	/^y_pred = decoder_op$/;"	v
+y_true	tensorflow_autoencoder.py	/^y_true = X$/;"	v
+ACTIVATION	tensorflow_batch_normalization.py	/^ACTIVATION = tf.nn.tanh$/;"	v
+N_HIDDEN_UNITS	tensorflow_batch_normalization.py	/^N_HIDDEN_UNITS = 30$/;"	v
+N_LAYERS	tensorflow_batch_normalization.py	/^N_LAYERS = 7$/;"	v
+add_layer	tensorflow_batch_normalization.py	/^    def add_layer(inputs, in_size, out_size, activation_function=None, norm=False):$/;"	f	function:built_net
+built_net	tensorflow_batch_normalization.py	/^def built_net(xs, ys, norm):$/;"	f
+compat	tensorflow_batch_normalization.py	/^import tensorflow.compat.v1 as tf$/;"	i
+cost_his	tensorflow_batch_normalization.py	/^cost_his = []$/;"	v
+cost_his_norm	tensorflow_batch_normalization.py	/^cost_his_norm = []$/;"	v
+fix_seed	tensorflow_batch_normalization.py	/^def fix_seed(seed=1):$/;"	f
+init	tensorflow_batch_normalization.py	/^    init = tf.global_variables_initializer()$/;"	v
+init	tensorflow_batch_normalization.py	/^    init = tf.initialize_all_variables()$/;"	v
+matplotlib	tensorflow_batch_normalization.py	/^import os,matplotlib.pyplot as plt$/;"	i
+mean_var_with_update	tensorflow_batch_normalization.py	/^            def mean_var_with_update():$/;"	f	function:built_net.add_layer
+mean_var_with_update	tensorflow_batch_normalization.py	/^        def mean_var_with_update():$/;"	f	function:built_net.add_layer
+noise	tensorflow_batch_normalization.py	/^noise = np.random.normal(0, 8, x_data.shape)$/;"	v
+np	tensorflow_batch_normalization.py	/^import numpy as np$/;"	i
+os	tensorflow_batch_normalization.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plot_his	tensorflow_batch_normalization.py	/^def plot_his(inputs, inputs_norm):$/;"	f
+plt	tensorflow_batch_normalization.py	/^import os,matplotlib.pyplot as plt$/;"	i
+record_step	tensorflow_batch_normalization.py	/^record_step = 5$/;"	v
+seq2seq	tensorflow_batch_normalization.py	/^import seq_loss as seq2seq$/;"	i
+sess	tensorflow_batch_normalization.py	/^sess = tf.Session()$/;"	v
+tensorflow	tensorflow_batch_normalization.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_batch_normalization.py	/^import tensorflow.compat.v1 as tf$/;"	i
+x_data	tensorflow_batch_normalization.py	/^x_data = np.linspace(-7, 10, 2500)[:, np.newaxis]$/;"	v
+xs	tensorflow_batch_normalization.py	/^xs = tf.placeholder(tf.float32, [None, 1])  # [num_samples, num_features]$/;"	v
+y_data	tensorflow_batch_normalization.py	/^y_data = np.square(x_data) - 5 + noise$/;"	v
+ys	tensorflow_batch_normalization.py	/^ys = tf.placeholder(tf.float32, [None, 1])$/;"	v
+add_layer	tensorflow_classification.py	/^def add_layer(inputs, in_size, out_size, n_layer, activation_funtion = None):$/;"	f
+compat	tensorflow_classification.py	/^import tensorflow.compat.v1 as tf$/;"	i
+compute_accuracy	tensorflow_classification.py	/^def compute_accuracy(v_xs, v_ys):$/;"	f
+cross_entropy	tensorflow_classification.py	/^    cross_entropy = tf.losses.softmax_cross_entropy(ys, prediction)$/;"	v
+init	tensorflow_classification.py	/^init = tf.global_variables_initializer()$/;"	v
+input_data	tensorflow_classification.py	/^from tensorflow.core.example import input_data$/;"	i
+l1	tensorflow_classification.py	/^l1 = tf.layers.dense(xs, 10, tf.nn.tanh)$/;"	v
+merged	tensorflow_classification.py	/^    merged = tf.summary.merge_all()$/;"	v
+mnist	tensorflow_classification.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=True)$/;"	v
+np	tensorflow_classification.py	/^import numpy as np$/;"	i
+os	tensorflow_classification.py	/^import os$/;"	i
+pred_y	tensorflow_classification.py	/^    pred_y = np.argmax(test_output, 1)$/;"	v
+prediction	tensorflow_classification.py	/^prediction = tf.layers.dense(l1, 10, tf.nn.softmax)$/;"	v
+result	tensorflow_classification.py	/^            result = sess.run(merged, feed_dict={xs: batch_xs, ys: batch_ys})$/;"	v
+tensorflow	tensorflow_classification.py	/^import tensorflow.compat.v1 as tf$/;"	i
+test_output	tensorflow_classification.py	/^    test_output = sess.run(prediction, {xs: mnist.test.images[2000:4000][:30]})$/;"	v
+tf	tensorflow_classification.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_classification.py	/^    train_step = tf.train.GradientDescentOptimizer(0.8).minimize(cross_entropy)$/;"	v
+writer	tensorflow_classification.py	/^    writer = tf.summary.FileWriter("logs\/", sess.graph)$/;"	v
+xs	tensorflow_classification.py	/^    xs = tf.placeholder(tf.float32,[None, 784], name='x_input')$/;"	v
+ys	tensorflow_classification.py	/^    ys = tf.placeholder(tf.float32,[None, 10], name='y_input')$/;"	v
+W_conv1	tensorflow_cnn.py	/^    W_conv1 = weight_variable([5, 5, 1, 32]) #patch 5*5, in size 1, out size 32$/;"	v
+W_conv2	tensorflow_cnn.py	/^    W_conv2 = weight_variable([5, 5, 32, 64]) #patch 5*5, in size 32, out size 64$/;"	v
+activation	tensorflow_cnn.py	/^    activation=tf.nn.relu$/;"	v
+b_conv1	tensorflow_cnn.py	/^    b_conv1 = bias_variable([32])$/;"	v
+b_conv2	tensorflow_cnn.py	/^    b_conv2 = bias_variable([64])$/;"	v
+bias_variable	tensorflow_cnn.py	/^def bias_variable(shape):$/;"	f
+compat	tensorflow_cnn.py	/^import tensorflow.compat.v1 as tf$/;"	i
+compute_accuracy	tensorflow_cnn.py	/^def compute_accuracy(v_xs, v_ys):$/;"	f
+conv2d	tensorflow_cnn.py	/^def conv2d(x, W):$/;"	f
+cross_entropy	tensorflow_cnn.py	/^    cross_entropy = tf.losses.softmax_cross_entropy(ys, prediction)$/;"	v
+filters	tensorflow_cnn.py	/^    filters=16,$/;"	v
+flat	tensorflow_cnn.py	/^flat = tf.reshape(h_pool2, [-1, 7*7*32])          # -> (7*7*32, )$/;"	v
+h_conv1	tensorflow_cnn.py	/^    h_conv1 = tf.layers.conv2d(   # shape (28, 28, 1)$/;"	v
+h_conv2	tensorflow_cnn.py	/^    h_conv2 = tf.layers.conv2d(h_pool1, 32, 5, 1, 'same', activation=tf.nn.relu)    # -> (14, 14, 32)$/;"	v
+h_pool1	tensorflow_cnn.py	/^    h_pool1 = tf.layers.max_pooling2d($/;"	v
+h_pool2	tensorflow_cnn.py	/^    h_pool2 = tf.layers.max_pooling2d(h_conv2, 2, 2)    # -> (7, 7, 32)$/;"	v
+init	tensorflow_cnn.py	/^init = tf.global_variables_initializer()$/;"	v
+input_data	tensorflow_cnn.py	/^from tensorflow.core.example import input_data$/;"	i
+inputs	tensorflow_cnn.py	/^    inputs=x_image,$/;"	v
+keep_prob	tensorflow_cnn.py	/^    keep_prob = tf.placeholder(tf.float32)$/;"	v
+kernel_size	tensorflow_cnn.py	/^    kernel_size=5,$/;"	v
+matplotlib	tensorflow_cnn.py	/^import os,matplotlib.pyplot as plt$/;"	i
+max_pool_2x2	tensorflow_cnn.py	/^def max_pool_2x2(x):$/;"	f
+merged	tensorflow_cnn.py	/^    merged = tf.summary.merge_all()$/;"	v
+mnist	tensorflow_cnn.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=True)$/;"	v
+np	tensorflow_cnn.py	/^import numpy as np$/;"	i
+os	tensorflow_cnn.py	/^import os$/;"	i
+os	tensorflow_cnn.py	/^import os,matplotlib.pyplot as plt$/;"	i
+padding	tensorflow_cnn.py	/^    padding='same',$/;"	v
+plt	tensorflow_cnn.py	/^import os,matplotlib.pyplot as plt$/;"	i
+pool_size	tensorflow_cnn.py	/^    pool_size=2,$/;"	v
+pred_y	tensorflow_cnn.py	/^    pred_y = np.argmax(test_output, 1)$/;"	v
+prediction	tensorflow_cnn.py	/^prediction = tf.layers.dense(flat, 10)              # output layer$/;"	v
+result	tensorflow_cnn.py	/^            result = sess.run(merged, feed_dict={xs: batch_xs, ys: batch_ys, keep_prob: 1})$/;"	v
+strides	tensorflow_cnn.py	/^    strides=1,$/;"	v
+strides	tensorflow_cnn.py	/^    strides=2,$/;"	v
+tensorflow	tensorflow_cnn.py	/^import tensorflow.compat.v1 as tf$/;"	i
+test_output	tensorflow_cnn.py	/^    test_output = sess.run(prediction, {xs: mnist.test.images[2000:4000][:30]})$/;"	v
+test_x	tensorflow_cnn.py	/^test_x = mnist.test.images[:2000]$/;"	v
+test_y	tensorflow_cnn.py	/^test_y = mnist.test.labels[:2000]$/;"	v
+tf	tensorflow_cnn.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_cnn.py	/^    train_step=tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)$/;"	v
+weight_variable	tensorflow_cnn.py	/^def weight_variable(shape):$/;"	f
+writer	tensorflow_cnn.py	/^    writer = tf.summary.FileWriter("logs\/", sess.graph)$/;"	v
+x_image	tensorflow_cnn.py	/^    x_image = tf.reshape(xs, [-1, 28, 28, 1])$/;"	v
+xs	tensorflow_cnn.py	/^    xs = tf.placeholder(tf.float32,[None, 784], name='x_input')$/;"	v
+ys	tensorflow_cnn.py	/^    ys = tf.placeholder(tf.float32,[None, 10], name='y_input')$/;"	v
+W_conv1	tensorflow_cnn_1.py	/^W_conv1 = weight_variable([5,5, 1,32]) # patch 5x5, in size 1, out size 32$/;"	v
+W_conv2	tensorflow_cnn_1.py	/^W_conv2 = weight_variable([5,5, 32, 64]) # patch 5x5, in size 32, out size 64$/;"	v
+W_fc1	tensorflow_cnn_1.py	/^W_fc1 = weight_variable([7*7*64, 1024])$/;"	v
+W_fc2	tensorflow_cnn_1.py	/^W_fc2 = weight_variable([1024, 10])$/;"	v
+b_conv1	tensorflow_cnn_1.py	/^b_conv1 = bias_variable([32])$/;"	v
+b_conv2	tensorflow_cnn_1.py	/^b_conv2 = bias_variable([64])$/;"	v
+b_fc1	tensorflow_cnn_1.py	/^b_fc1 = bias_variable([1024])$/;"	v
+b_fc2	tensorflow_cnn_1.py	/^b_fc2 = bias_variable([10])$/;"	v
+bias_variable	tensorflow_cnn_1.py	/^def bias_variable(shape):$/;"	f
+compat	tensorflow_cnn_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+compute_accuracy	tensorflow_cnn_1.py	/^def compute_accuracy(v_xs, v_ys):$/;"	f
+conv2d	tensorflow_cnn_1.py	/^def conv2d(x, W):$/;"	f
+cross_entropy	tensorflow_cnn_1.py	/^cross_entropy = tf.reduce_mean(-tf.reduce_sum(ys * tf.log(prediction),$/;"	v
+h_conv1	tensorflow_cnn_1.py	/^h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1) # output size 28x28x32$/;"	v
+h_conv2	tensorflow_cnn_1.py	/^h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2) + b_conv2) # output size 14x14x64$/;"	v
+h_fc1	tensorflow_cnn_1.py	/^h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)$/;"	v
+h_fc1_drop	tensorflow_cnn_1.py	/^h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)$/;"	v
+h_pool1	tensorflow_cnn_1.py	/^h_pool1 = max_pool_2x2(h_conv1)                                         # output size 14x14x32$/;"	v
+h_pool2	tensorflow_cnn_1.py	/^h_pool2 = max_pool_2x2(h_conv2)                                         # output size 7x7x64$/;"	v
+h_pool2_flat	tensorflow_cnn_1.py	/^h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])$/;"	v
+init	tensorflow_cnn_1.py	/^init = tf.global_variables_initializer()$/;"	v
+input_data	tensorflow_cnn_1.py	/^import input_data$/;"	i
+keep_prob	tensorflow_cnn_1.py	/^keep_prob = tf.placeholder(tf.float32)$/;"	v
+max_pool_2x2	tensorflow_cnn_1.py	/^def max_pool_2x2(x):$/;"	f
+mnist	tensorflow_cnn_1.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=True)$/;"	v
+np	tensorflow_cnn_1.py	/^import numpy as np$/;"	i
+os	tensorflow_cnn_1.py	/^import os$/;"	i
+prediction	tensorflow_cnn_1.py	/^prediction = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)$/;"	v
+sess	tensorflow_cnn_1.py	/^sess = tf.Session()$/;"	v
+tensorflow	tensorflow_cnn_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_cnn_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_cnn_1.py	/^train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)$/;"	v
+weight_variable	tensorflow_cnn_1.py	/^def weight_variable(shape):$/;"	f
+x_image	tensorflow_cnn_1.py	/^x_image = tf.reshape(xs, [-1, 28, 28, 1])$/;"	v
+xs	tensorflow_cnn_1.py	/^xs = tf.placeholder(tf.float32, [None, 784])\/255.   # 28x28$/;"	v
+ys	tensorflow_cnn_1.py	/^ys = tf.placeholder(tf.float32, [None, 10])$/;"	v
+LR	tensorflow_dropout.py	/^LR = 0.01$/;"	v
+LabelBinarizer	tensorflow_dropout.py	/^from sklearn.preprocessing import LabelBinarizer$/;"	i
+N_HIDDEN	tensorflow_dropout.py	/^N_HIDDEN = 100$/;"	v
+N_SAMPLES	tensorflow_dropout.py	/^N_SAMPLES = 20$/;"	v
+X	tensorflow_dropout.py	/^X = digits.data$/;"	v
+compat	tensorflow_dropout.py	/^import tensorflow.compat.v1 as tf$/;"	i
+d1	tensorflow_dropout.py	/^    d1 = tf.layers.dense(xs, N_HIDDEN, tf.nn.relu)$/;"	v
+d1	tensorflow_dropout.py	/^    d1 = tf.layers.dropout(d1, rate=0.5, training=tf_is_training)   # drop out 50% of inputs$/;"	v
+d2	tensorflow_dropout.py	/^    d2 = tf.layers.dense(d1, N_HIDDEN, tf.nn.relu)$/;"	v
+d2	tensorflow_dropout.py	/^    d2 = tf.layers.dropout(d2, rate=0.5, training=tf_is_training)   # drop out 50% of inputs$/;"	v
+d_loss	tensorflow_dropout.py	/^    d_loss = tf.losses.mean_squared_error(ys, d_out)$/;"	v
+d_out	tensorflow_dropout.py	/^    d_out = tf.layers.dense(d2, 10)$/;"	v
+d_train	tensorflow_dropout.py	/^    d_train = tf.train.AdamOptimizer(LR).minimize(d_loss)$/;"	v
+digits	tensorflow_dropout.py	/^digits = load_digits()$/;"	v
+init	tensorflow_dropout.py	/^init = tf.global_variables_initializer()$/;"	v
+keep_prob	tensorflow_dropout.py	/^    keep_prob = tf.placeholder(tf.float32)$/;"	v
+load_digits	tensorflow_dropout.py	/^from sklearn.datasets import load_digits$/;"	i
+merged	tensorflow_dropout.py	/^    merged = tf.summary.merge_all()$/;"	v
+np	tensorflow_dropout.py	/^import numpy as np$/;"	i
+o1	tensorflow_dropout.py	/^    o1 = tf.layers.dense(xs, N_HIDDEN, tf.nn.relu)$/;"	v
+o2	tensorflow_dropout.py	/^    o2 = tf.layers.dense(o1, N_HIDDEN, tf.nn.relu)$/;"	v
+o_loss	tensorflow_dropout.py	/^    o_loss = tf.losses.mean_squared_error(ys, o_out)$/;"	v
+o_out	tensorflow_dropout.py	/^    o_out = tf.layers.dense(o2, 10)$/;"	v
+o_train	tensorflow_dropout.py	/^    o_train = tf.train.AdamOptimizer(LR).minimize(o_loss)$/;"	v
+os	tensorflow_dropout.py	/^import os$/;"	i
+tensorflow	tensorflow_dropout.py	/^import tensorflow.compat.v1 as tf$/;"	i
+test_result	tensorflow_dropout.py	/^            test_result = sess.run(merged, feed_dict={xs: X_test, ys: y_test, tf_is_training: False})$/;"	v
+test_writer	tensorflow_dropout.py	/^    test_writer = tf.summary.FileWriter("logs\/test", sess.graph)$/;"	v
+tf	tensorflow_dropout.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf_is_training	tensorflow_dropout.py	/^    tf_is_training = tf.placeholder(tf.bool, None)  # to control dropout when training and testing$/;"	v
+train_result	tensorflow_dropout.py	/^            train_result = sess.run(merged, feed_dict={xs: X_train, ys: y_train, tf_is_training: False})$/;"	v
+train_test_split	tensorflow_dropout.py	/^from sklearn.model_selection import train_test_split$/;"	i
+train_writer	tensorflow_dropout.py	/^    train_writer = tf.summary.FileWriter("logs\/train", sess.graph)$/;"	v
+xs	tensorflow_dropout.py	/^    xs = tf.placeholder(tf.float32,[None, 64], name='x_input') # 8*8$/;"	v
+y	tensorflow_dropout.py	/^y = LabelBinarizer().fit_transform(y)$/;"	v
+y	tensorflow_dropout.py	/^y = digits.target$/;"	v
+ys	tensorflow_dropout.py	/^    ys = tf.placeholder(tf.float32,[None, 10], name='y_input')$/;"	v
+Axes3D	tensorflow_gradient-descent.py	/^from mpl_toolkits.mplot3d import Axes3D$/;"	i
+INIT_PARAMS	tensorflow_gradient-descent.py	/^INIT_PARAMS = [[5, 4],$/;"	v
+LR	tensorflow_gradient-descent.py	/^LR = 0.1$/;"	v
+REAL_PARAMS	tensorflow_gradient-descent.py	/^REAL_PARAMS = [1.2, 2.5]$/;"	v
+compat	tensorflow_gradient-descent.py	/^import tensorflow.compat.v1 as tf$/;"	i
+cost3D	tensorflow_gradient-descent.py	/^cost3D = np.array([np.mean(np.square(y_fun(a_, b_) - y)) for a_, b_ in zip(a3D.flatten(), b3D.flatten())]).reshape(a3D.shape)$/;"	v
+fig	tensorflow_gradient-descent.py	/^fig = plt.figure(2); ax = Axes3D(fig)$/;"	v
+matplotlib	tensorflow_gradient-descent.py	/^import os,matplotlib.pyplot as plt$/;"	i
+mse	tensorflow_gradient-descent.py	/^mse = tf.reduce_mean(tf.square(y-pred))$/;"	v
+noise	tensorflow_gradient-descent.py	/^noise = np.random.randn(200)\/10$/;"	v
+np	tensorflow_gradient-descent.py	/^import numpy as np$/;"	i
+os	tensorflow_gradient-descent.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_gradient-descent.py	/^import os,matplotlib.pyplot as plt$/;"	i
+pred	tensorflow_gradient-descent.py	/^pred = tf_y_fun(a, b)$/;"	v
+tensorflow	tensorflow_gradient-descent.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_gradient-descent.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf_y_fun	tensorflow_gradient-descent.py	/^tf_y_fun = lambda a, b: tf.sin(b*tf.cos(a*x))$/;"	v
+train_op	tensorflow_gradient-descent.py	/^train_op = tf.train.GradientDescentOptimizer(LR).minimize(mse)$/;"	v
+x	tensorflow_gradient-descent.py	/^x = np.linspace(-1, 1, 200, dtype=np.float32)   # x data$/;"	v
+y	tensorflow_gradient-descent.py	/^y = y_fun(*REAL_PARAMS) + noise         # target$/;"	v
+y_fun	tensorflow_gradient-descent.py	/^y_fun = lambda a, b: np.sin(b*np.cos(a*x))$/;"	v
+compat	tensorflow_layer.py	/^import tensorflow.compat.v1 as tf$/;"	i
+init	tensorflow_layer.py	/^init = tf.global_variables_initializer()$/;"	v
+l1	tensorflow_layer.py	/^l1 = tf.layers.dense(xs, 10, tf.nn.relu)$/;"	v
+loss	tensorflow_layer.py	/^loss = tf.losses.mean_squared_error(ys, prediction)$/;"	v
+noise	tensorflow_layer.py	/^noise = np.random.normal(0, 0.05, x_data.shape)$/;"	v
+np	tensorflow_layer.py	/^import numpy as np$/;"	i
+os	tensorflow_layer.py	/^import os$/;"	i
+prediction	tensorflow_layer.py	/^prediction = tf.layers.dense(l1, 1)$/;"	v
+tensorflow	tensorflow_layer.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_layer.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_layer.py	/^train_step = tf.train.GradientDescentOptimizer(learning_rate=0.1).minimize(loss)$/;"	v
+x_data	tensorflow_layer.py	/^x_data = np.linspace(-1, 1, 300)[:, np.newaxis]$/;"	v
+xs	tensorflow_layer.py	/^xs = tf.placeholder(tf.float32,[None, 1])$/;"	v
+y_data	tensorflow_layer.py	/^y_data = np.square(x_data) - 0.5 + noise$/;"	v
+ys	tensorflow_layer.py	/^ys = tf.placeholder(tf.float32,[None, 1])$/;"	v
+add_layer	tensorflow_layer_board_1.py	/^def add_layer(inputs, in_size, out_size, activation_funtion = None):$/;"	f
+compat	tensorflow_layer_board_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+init	tensorflow_layer_board_1.py	/^init = tf.global_variables_initializer()$/;"	v
+l1	tensorflow_layer_board_1.py	/^l1 = add_layer(xs, 1, 10, activation_funtion=tf.nn.relu)$/;"	v
+loss	tensorflow_layer_board_1.py	/^    loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction), reduction_indices=[1]))$/;"	v
+noise	tensorflow_layer_board_1.py	/^noise = np.random.normal(0, 0.05, x_data.shape)$/;"	v
+np	tensorflow_layer_board_1.py	/^import numpy as np$/;"	i
+os	tensorflow_layer_board_1.py	/^import os$/;"	i
+prediction	tensorflow_layer_board_1.py	/^prediction = add_layer(l1, 10, 1, activation_funtion=None)$/;"	v
+tensorflow	tensorflow_layer_board_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_layer_board_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_layer_board_1.py	/^    train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)$/;"	v
+writer	tensorflow_layer_board_1.py	/^    writer = tf.summary.FileWriter("logs\/", sess.graph)$/;"	v
+x_data	tensorflow_layer_board_1.py	/^x_data = np.linspace(-1, 1, 300)[:, np.newaxis]$/;"	v
+xs	tensorflow_layer_board_1.py	/^    xs = tf.placeholder(tf.float32,[None, 1], name='x_input')$/;"	v
+y_data	tensorflow_layer_board_1.py	/^y_data = np.square(x_data) - 0.5 + noise$/;"	v
+ys	tensorflow_layer_board_1.py	/^    ys = tf.placeholder(tf.float32,[None, 1], name='y_input')$/;"	v
+add_layer	tensorflow_layer_board_2.py	/^def add_layer(inputs, in_size, out_size, n_layer, activation_funtion = None):$/;"	f
+compat	tensorflow_layer_board_2.py	/^import tensorflow.compat.v1 as tf$/;"	i
+init	tensorflow_layer_board_2.py	/^init = tf.global_variables_initializer()$/;"	v
+l1	tensorflow_layer_board_2.py	/^l1 = add_layer(xs, 1, 10, n_layer=1, activation_funtion=tf.nn.relu)$/;"	v
+loss	tensorflow_layer_board_2.py	/^    loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction), reduction_indices=[1]))$/;"	v
+merged	tensorflow_layer_board_2.py	/^    merged = tf.summary.merge_all()$/;"	v
+noise	tensorflow_layer_board_2.py	/^noise = np.random.normal(0, 0.05, x_data.shape)$/;"	v
+np	tensorflow_layer_board_2.py	/^import numpy as np$/;"	i
+os	tensorflow_layer_board_2.py	/^import os$/;"	i
+prediction	tensorflow_layer_board_2.py	/^prediction = add_layer(l1, 10, 1, n_layer=2, activation_funtion=None)$/;"	v
+result	tensorflow_layer_board_2.py	/^            result = sess.run(merged, feed_dict={xs: x_data, ys: y_data})$/;"	v
+tensorflow	tensorflow_layer_board_2.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_layer_board_2.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_layer_board_2.py	/^    train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)$/;"	v
+writer	tensorflow_layer_board_2.py	/^    writer = tf.summary.FileWriter("logs\/", sess.graph)$/;"	v
+x_data	tensorflow_layer_board_2.py	/^x_data = np.linspace(-1, 1, 300)[:, np.newaxis]$/;"	v
+xs	tensorflow_layer_board_2.py	/^    xs = tf.placeholder(tf.float32,[None, 1], name='x_input')$/;"	v
+y_data	tensorflow_layer_board_2.py	/^y_data = np.square(x_data) - 0.5 + noise$/;"	v
+ys	tensorflow_layer_board_2.py	/^    ys = tf.placeholder(tf.float32,[None, 1], name='y_input')$/;"	v
+add_layer	tensorflow_layer_plt.py	/^def add_layer(inputs, in_size, out_size, activation_funtion = None):$/;"	f
+ax	tensorflow_layer_plt.py	/^    ax = fig.add_subplot(1, 1, 1)$/;"	v
+compat	tensorflow_layer_plt.py	/^import tensorflow.compat.v1 as tf$/;"	i
+fig	tensorflow_layer_plt.py	/^    fig = plt.figure()$/;"	v
+init	tensorflow_layer_plt.py	/^init = tf.global_variables_initializer()$/;"	v
+l1	tensorflow_layer_plt.py	/^l1 = add_layer(xs, 1, 10, activation_funtion=tf.nn.relu)$/;"	v
+lines	tensorflow_layer_plt.py	/^            lines = ax.plot(x_data, prediction_value, 'red', lw=5)$/;"	v
+loss	tensorflow_layer_plt.py	/^loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction), reduction_indices=[1]))$/;"	v
+matplotlib	tensorflow_layer_plt.py	/^import os,matplotlib.pyplot as plt$/;"	i
+noise	tensorflow_layer_plt.py	/^noise = np.random.normal(0, 0.05, x_data.shape)$/;"	v
+np	tensorflow_layer_plt.py	/^import numpy as np$/;"	i
+os	tensorflow_layer_plt.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_layer_plt.py	/^import os,matplotlib.pyplot as plt$/;"	i
+prediction	tensorflow_layer_plt.py	/^prediction = add_layer(l1, 10, 1, activation_funtion=None)$/;"	v
+prediction_value	tensorflow_layer_plt.py	/^            prediction_value = sess.run(prediction,feed_dict={xs: x_data})$/;"	v
+tensorflow	tensorflow_layer_plt.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_layer_plt.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_layer_plt.py	/^train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)$/;"	v
+x_data	tensorflow_layer_plt.py	/^x_data = np.linspace(-1, 1, 300)[:, np.newaxis]$/;"	v
+xs	tensorflow_layer_plt.py	/^xs = tf.placeholder(tf.float32,[None, 1])$/;"	v
+y_data	tensorflow_layer_plt.py	/^y_data = np.square(x_data) - 0.5 + noise$/;"	v
+ys	tensorflow_layer_plt.py	/^ys = tf.placeholder(tf.float32,[None, 1])$/;"	v
+add_layer	tensorflow_mnist_1.py	/^def add_layer(inputs, in_size, out_size, activation_function=None,):$/;"	f
+compat	tensorflow_mnist_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+compute_accuracy	tensorflow_mnist_1.py	/^def compute_accuracy(v_xs, v_ys):$/;"	f
+cross_entropy	tensorflow_mnist_1.py	/^cross_entropy = tf.reduce_mean(-tf.reduce_sum(ys * tf.log(prediction),$/;"	v
+init	tensorflow_mnist_1.py	/^    init = tf.global_variables_initializer()$/;"	v
+init	tensorflow_mnist_1.py	/^    init = tf.initialize_all_variables()$/;"	v
+input_data	tensorflow_mnist_1.py	/^import input_data$/;"	i
+mnist	tensorflow_mnist_1.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=True)$/;"	v
+np	tensorflow_mnist_1.py	/^import numpy as np$/;"	i
+os	tensorflow_mnist_1.py	/^import os$/;"	i
+prediction	tensorflow_mnist_1.py	/^prediction = add_layer(xs, 784, 10,  activation_function=tf.nn.softmax)$/;"	v
+print_function	tensorflow_mnist_1.py	/^from __future__ import print_function$/;"	i
+reduction_indices	tensorflow_mnist_1.py	/^                                              reduction_indices=[1]))       # loss$/;"	v
+sess	tensorflow_mnist_1.py	/^sess = tf.Session()$/;"	v
+tensorflow	tensorflow_mnist_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_mnist_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_step	tensorflow_mnist_1.py	/^train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)$/;"	v
+xs	tensorflow_mnist_1.py	/^xs = tf.placeholder(tf.float32, [None, 784]) # 28x28$/;"	v
+ys	tensorflow_mnist_1.py	/^ys = tf.placeholder(tf.float32, [None, 10])$/;"	v
+W	tensorflow_restore.py	/^W = tf.Variable(np.arange(6).reshape((2, 3)), dtype= tf.float32, name= "weight")$/;"	v
+b	tensorflow_restore.py	/^b = tf.Variable(np.arange(3).reshape((1, 3)), dtype= tf.float32, name= "biases")$/;"	v
+compat	tensorflow_restore.py	/^import tensorflow.compat.v1 as tf$/;"	i
+init	tensorflow_restore.py	/^init = tf.global_variables_initializer()$/;"	v
+np	tensorflow_restore.py	/^import numpy as np$/;"	i
+os	tensorflow_restore.py	/^import os$/;"	i
+save_path	tensorflow_restore.py	/^    save_path = saver.restore(sess, "my_net\/save_net.ckpt")$/;"	v
+saver	tensorflow_restore.py	/^saver = tf.train.Saver()$/;"	v
+tensorflow	tensorflow_restore.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_restore.py	/^import tensorflow.compat.v1 as tf$/;"	i
+LR	tensorflow_rnn.py	/^LR = 0.01               # learning rate$/;"	v
+accuracy	tensorflow_rnn.py	/^accuracy = tf.metrics.accuracy(          # return (acc, update_op), and create 2 local variables$/;"	v
+batch_size	tensorflow_rnn.py	/^batch_size = 128$/;"	v
+compat	tensorflow_rnn.py	/^import tensorflow.compat.v1 as tf$/;"	i
+dtype	tensorflow_rnn.py	/^    dtype=tf.float32,           # must given if set initial_state = None$/;"	v
+image	tensorflow_rnn.py	/^image = tf.reshape(x, [-1, n_steps, n_inputs])     $/;"	v
+init_op	tensorflow_rnn.py	/^init_op = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())$/;"	v
+initial_state	tensorflow_rnn.py	/^    initial_state=None,         # the initial hidden state$/;"	v
+input_data	tensorflow_rnn.py	/^from tensorflow.core.example import input_data$/;"	i
+labels	tensorflow_rnn.py	/^    labels=tf.argmax(y, axis=1), predictions=tf.argmax(output, axis=1),)[1]$/;"	v
+loss	tensorflow_rnn.py	/^loss = tf.losses.softmax_cross_entropy(onehot_labels=y, logits=output)           # compute cost$/;"	v
+lr	tensorflow_rnn.py	/^lr = 0.001$/;"	v
+mnist	tensorflow_rnn.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=True)$/;"	v
+n_classes	tensorflow_rnn.py	/^n_classes = 10 #MNIST classes (0-9 digits)$/;"	v
+n_hidden_units	tensorflow_rnn.py	/^n_hidden_units = 128$/;"	v
+n_inputs	tensorflow_rnn.py	/^n_inputs = 28 #MNIST data input (img shape: 28*28)$/;"	v
+n_steps	tensorflow_rnn.py	/^n_steps = 28$/;"	v
+np	tensorflow_rnn.py	/^import numpy as np$/;"	i
+os	tensorflow_rnn.py	/^import os$/;"	i
+output	tensorflow_rnn.py	/^output = tf.layers.dense(outputs[:, -1, :], 10)              # output based on the last output step$/;"	v
+pred_y	tensorflow_rnn.py	/^    pred_y = np.argmax(test_output, 1)$/;"	v
+rnn_cell	tensorflow_rnn.py	/^rnn_cell = tf.nn.rnn_cell.LSTMCell(num_units=64)$/;"	v
+step	tensorflow_rnn.py	/^    step = 0$/;"	v
+tensorflow	tensorflow_rnn.py	/^import tensorflow.compat.v1 as tf$/;"	i
+test_output	tensorflow_rnn.py	/^    test_output = sess.run(output, {x: mnist.test.images[2000:4000][30:60]})$/;"	v
+test_x	tensorflow_rnn.py	/^test_x = mnist.test.images[:2000]$/;"	v
+test_y	tensorflow_rnn.py	/^test_y = mnist.test.labels[:2000]$/;"	v
+tf	tensorflow_rnn.py	/^import tensorflow.compat.v1 as tf$/;"	i
+time_major	tensorflow_rnn.py	/^    time_major=False,           # False: (batch, time step, input); True: (time step, batch, input)$/;"	v
+train_op	tensorflow_rnn.py	/^train_op = tf.train.AdamOptimizer(LR).minimize(loss)$/;"	v
+training_iters	tensorflow_rnn.py	/^training_iters = 100000$/;"	v
+x	tensorflow_rnn.py	/^x = tf.placeholder(tf.float32,[None, n_steps * n_inputs])$/;"	v
+y	tensorflow_rnn.py	/^y = tf.placeholder(tf.float32,[None, n_classes])$/;"	v
+RNN	tensorflow_rnn_1.py	/^def RNN(X, weights, biases):$/;"	f
+accuracy	tensorflow_rnn_1.py	/^accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))$/;"	v
+batch_size	tensorflow_rnn_1.py	/^batch_size = 128$/;"	v
+batch_xs	tensorflow_rnn_1.py	/^        batch_xs = batch_xs.reshape([batch_size, n_steps, n_inputs])$/;"	v
+biases	tensorflow_rnn_1.py	/^biases = {$/;"	v
+compat	tensorflow_rnn_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+correct_pred	tensorflow_rnn_1.py	/^correct_pred = tf.equal(tf.argmax(pred, 1), tf.argmax(y, 1))$/;"	v
+cost	tensorflow_rnn_1.py	/^cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=pred, labels=y))$/;"	v
+init	tensorflow_rnn_1.py	/^        init = tf.global_variables_initializer()$/;"	v
+init	tensorflow_rnn_1.py	/^        init = tf.initialize_all_variables()$/;"	v
+input_data	tensorflow_rnn_1.py	/^import input_data$/;"	i
+lr	tensorflow_rnn_1.py	/^lr = 0.001$/;"	v
+mnist	tensorflow_rnn_1.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=True)$/;"	v
+n_classes	tensorflow_rnn_1.py	/^n_classes = 10      # MNIST classes (0-9 digits)$/;"	v
+n_hidden_units	tensorflow_rnn_1.py	/^n_hidden_units = 128   # neurons in hidden layer$/;"	v
+n_inputs	tensorflow_rnn_1.py	/^n_inputs = 28   # MNIST data input (img shape: 28*28)$/;"	v
+n_steps	tensorflow_rnn_1.py	/^n_steps = 28    # time steps$/;"	v
+np	tensorflow_rnn_1.py	/^import numpy as np$/;"	i
+os	tensorflow_rnn_1.py	/^import os$/;"	i
+pred	tensorflow_rnn_1.py	/^pred = RNN(x, weights, biases)$/;"	v
+step	tensorflow_rnn_1.py	/^    step = 0$/;"	v
+tensorflow	tensorflow_rnn_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_rnn_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train_op	tensorflow_rnn_1.py	/^train_op = tf.train.AdamOptimizer(lr).minimize(cost)$/;"	v
+training_iters	tensorflow_rnn_1.py	/^training_iters = 100000$/;"	v
+weights	tensorflow_rnn_1.py	/^weights = {$/;"	v
+x	tensorflow_rnn_1.py	/^x = tf.placeholder(tf.float32, [None, n_steps, n_inputs])$/;"	v
+y	tensorflow_rnn_1.py	/^y = tf.placeholder(tf.float32, [None, n_classes])$/;"	v
+BATCH_SIZE	tensorflow_rnn_lstm.py	/^BATCH_SIZE = 50$/;"	v
+BATCH_START	tensorflow_rnn_lstm.py	/^BATCH_START = 0$/;"	v
+CELL_SIZE	tensorflow_rnn_lstm.py	/^CELL_SIZE = 10$/;"	v
+INPUT_SIZE	tensorflow_rnn_lstm.py	/^INPUT_SIZE = 1$/;"	v
+LR	tensorflow_rnn_lstm.py	/^LR = 0.006$/;"	v
+LSTMRNN	tensorflow_rnn_lstm.py	/^class LSTMRNN(object):$/;"	c
+OUTPUT_SIZE	tensorflow_rnn_lstm.py	/^OUTPUT_SIZE = 1$/;"	v
+TIME_STEPS	tensorflow_rnn_lstm.py	/^TIME_STEPS = 20$/;"	v
+__init__	tensorflow_rnn_lstm.py	/^    def __init__(self, n_steps, input_size, output_size, cell_size, batch_size):$/;"	m	class:LSTMRNN
+_bias_variable	tensorflow_rnn_lstm.py	/^    def _bias_variable(self, shape, name='biases'):$/;"	m	class:LSTMRNN
+_weight_variable	tensorflow_rnn_lstm.py	/^    def _weight_variable(self, shape, name='weights'):$/;"	m	class:LSTMRNN
+add_cell	tensorflow_rnn_lstm.py	/^    def add_cell(self):$/;"	m	class:LSTMRNN
+add_input_layer	tensorflow_rnn_lstm.py	/^    def add_input_layer(self,):$/;"	m	class:LSTMRNN
+add_output_layer	tensorflow_rnn_lstm.py	/^    def add_output_layer(self):$/;"	m	class:LSTMRNN
+compat	tensorflow_rnn_lstm.py	/^import tensorflow.compat.v1 as tf$/;"	i
+compute_cost	tensorflow_rnn_lstm.py	/^    def compute_cost(self):$/;"	m	class:LSTMRNN
+get_batch	tensorflow_rnn_lstm.py	/^def get_batch():$/;"	f
+init	tensorflow_rnn_lstm.py	/^    init = tf.global_variables_initializer()$/;"	v	class:LSTMRNN
+matplotlib	tensorflow_rnn_lstm.py	/^import os,matplotlib.pyplot as plt$/;"	i
+merged	tensorflow_rnn_lstm.py	/^    merged = tf.summary.merge_all()$/;"	v	class:LSTMRNN
+model	tensorflow_rnn_lstm.py	/^    model = LSTMRNN(TIME_STEPS, INPUT_SIZE, OUTPUT_SIZE, CELL_SIZE, BATCH_SIZE)$/;"	v	class:LSTMRNN
+ms_error	tensorflow_rnn_lstm.py	/^    def ms_error(labels, logits):$/;"	m	class:LSTMRNN
+np	tensorflow_rnn_lstm.py	/^import numpy as np$/;"	i
+os	tensorflow_rnn_lstm.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_rnn_lstm.py	/^import os,matplotlib.pyplot as plt$/;"	i
+seq2seq	tensorflow_rnn_lstm.py	/^from tensorflow.core import seq_loss as seq2seq$/;"	i
+sess	tensorflow_rnn_lstm.py	/^    sess = tf.Session()$/;"	v	class:LSTMRNN
+tensorflow	tensorflow_rnn_lstm.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_rnn_lstm.py	/^import tensorflow.compat.v1 as tf$/;"	i
+writer	tensorflow_rnn_lstm.py	/^    writer = tf.summary.FileWriter("logs", sess.graph)$/;"	v	class:LSTMRNN
+BATCH_SIZE	tensorflow_rnn_lstm_1.py	/^BATCH_SIZE = 50$/;"	v
+BATCH_START	tensorflow_rnn_lstm_1.py	/^BATCH_START = 0$/;"	v
+CELL_SIZE	tensorflow_rnn_lstm_1.py	/^CELL_SIZE = 10$/;"	v
+INPUT_SIZE	tensorflow_rnn_lstm_1.py	/^INPUT_SIZE = 1$/;"	v
+LR	tensorflow_rnn_lstm_1.py	/^LR = 0.006$/;"	v
+LSTMRNN	tensorflow_rnn_lstm_1.py	/^class LSTMRNN(object):$/;"	c
+OUTPUT_SIZE	tensorflow_rnn_lstm_1.py	/^OUTPUT_SIZE = 1$/;"	v
+TIME_STEPS	tensorflow_rnn_lstm_1.py	/^TIME_STEPS = 20$/;"	v
+__init__	tensorflow_rnn_lstm_1.py	/^    def __init__(self, n_steps, input_size, output_size, cell_size, batch_size):$/;"	m	class:LSTMRNN
+_bias_variable	tensorflow_rnn_lstm_1.py	/^    def _bias_variable(self, shape, name='biases'):$/;"	m	class:LSTMRNN
+_weight_variable	tensorflow_rnn_lstm_1.py	/^    def _weight_variable(self, shape, name='weights'):$/;"	m	class:LSTMRNN
+add_cell	tensorflow_rnn_lstm_1.py	/^    def add_cell(self):$/;"	m	class:LSTMRNN
+add_input_layer	tensorflow_rnn_lstm_1.py	/^    def add_input_layer(self,):$/;"	m	class:LSTMRNN
+add_output_layer	tensorflow_rnn_lstm_1.py	/^    def add_output_layer(self):$/;"	m	class:LSTMRNN
+compat	tensorflow_rnn_lstm_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+compute_cost	tensorflow_rnn_lstm_1.py	/^    def compute_cost(self):$/;"	m	class:LSTMRNN
+get_batch	tensorflow_rnn_lstm_1.py	/^def get_batch():$/;"	f
+matplotlib	tensorflow_rnn_lstm_1.py	/^import os,matplotlib.pyplot as plt$/;"	i
+merged	tensorflow_rnn_lstm_1.py	/^    merged = tf.summary.merge_all()$/;"	v	class:LSTMRNN
+model	tensorflow_rnn_lstm_1.py	/^    model = LSTMRNN(TIME_STEPS, INPUT_SIZE, OUTPUT_SIZE, CELL_SIZE, BATCH_SIZE)$/;"	v	class:LSTMRNN
+ms_error	tensorflow_rnn_lstm_1.py	/^    def ms_error(labels, logits):$/;"	m	class:LSTMRNN
+np	tensorflow_rnn_lstm_1.py	/^import numpy as np$/;"	i
+os	tensorflow_rnn_lstm_1.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_rnn_lstm_1.py	/^import os,matplotlib.pyplot as plt$/;"	i
+seq2seq	tensorflow_rnn_lstm_1.py	/^import seq_loss as seq2seq$/;"	i
+sess	tensorflow_rnn_lstm_1.py	/^    sess = tf.Session()$/;"	v	class:LSTMRNN
+tensorflow	tensorflow_rnn_lstm_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_rnn_lstm_1.py	/^import tensorflow.compat.v1 as tf$/;"	i
+writer	tensorflow_rnn_lstm_1.py	/^    writer = tf.summary.FileWriter("logs", sess.graph)$/;"	v	class:LSTMRNN
+RNN	tensorflow_rnn_scope.py	/^class RNN(object):$/;"	c
+TestConfig	tensorflow_rnn_scope.py	/^class TestConfig(TrainConfig):$/;"	c
+TrainConfig	tensorflow_rnn_scope.py	/^class TrainConfig:$/;"	c
+__init__	tensorflow_rnn_scope.py	/^    def __init__(self, config):$/;"	m	class:RNN
+_bias_variable	tensorflow_rnn_scope.py	/^    def _bias_variable(shape, name='biases'):$/;"	m	class:RNN
+_built_RNN	tensorflow_rnn_scope.py	/^    def _built_RNN(self):$/;"	m	class:RNN
+_weight_variable	tensorflow_rnn_scope.py	/^    def _weight_variable(shape, name='weights'):$/;"	m	class:RNN
+batch_size	tensorflow_rnn_scope.py	/^    batch_size = 20$/;"	v	class:TrainConfig
+cell_size	tensorflow_rnn_scope.py	/^    cell_size = 11$/;"	v	class:TrainConfig
+compat	tensorflow_rnn_scope.py	/^import tensorflow.compat.v1 as tf$/;"	i
+input_size	tensorflow_rnn_scope.py	/^    input_size = 10$/;"	v	class:TrainConfig
+learning_rate	tensorflow_rnn_scope.py	/^    learning_rate = 0.01$/;"	v	class:TrainConfig
+ms_error	tensorflow_rnn_scope.py	/^    def ms_error(y_target, y_pre):$/;"	m	class:RNN
+output_size	tensorflow_rnn_scope.py	/^    output_size = 2$/;"	v	class:TrainConfig
+print_function	tensorflow_rnn_scope.py	/^from __future__ import print_function$/;"	i
+tensorflow	tensorflow_rnn_scope.py	/^import tensorflow.compat.v1 as tf$/;"	i
+test_config	tensorflow_rnn_scope.py	/^    test_config = TestConfig()$/;"	v	class:RNN
+tf	tensorflow_rnn_scope.py	/^import tensorflow.compat.v1 as tf$/;"	i
+time_steps	tensorflow_rnn_scope.py	/^    time_steps = 1$/;"	v	class:TestConfig
+time_steps	tensorflow_rnn_scope.py	/^    time_steps = 20$/;"	v	class:TrainConfig
+train_config	tensorflow_rnn_scope.py	/^    train_config = TrainConfig()$/;"	v	class:RNN
+W	tensorflow_save.py	/^W = tf.Variable([[1,2,3],[3,4,5]], dtype= tf.float32, name= "weight")$/;"	v
+b	tensorflow_save.py	/^b = tf.Variable([[1,2,3]], dtype= tf.float32, name= "biases")$/;"	v
+compat	tensorflow_save.py	/^import tensorflow.compat.v1 as tf$/;"	i
+init	tensorflow_save.py	/^init = tf.global_variables_initializer()$/;"	v
+np	tensorflow_save.py	/^import numpy as np$/;"	i
+os	tensorflow_save.py	/^import os$/;"	i
+save_path	tensorflow_save.py	/^    save_path = saver.save(sess, "my_net\/save_net.ckpt")$/;"	v
+saver	tensorflow_save.py	/^saver = tf.train.Saver()$/;"	v
+tensorflow	tensorflow_save.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_save.py	/^import tensorflow.compat.v1 as tf$/;"	i
+compat	tensorflow_scope.py	/^import tensorflow.compat.v1 as tf$/;"	i
+init	tensorflow_scope.py	/^        init = tf.global_variables_initializer()$/;"	v
+init	tensorflow_scope.py	/^        init = tf.initialize_all_variables()$/;"	v
+initializer	tensorflow_scope.py	/^    initializer = tf.constant_initializer(value=1)$/;"	v
+initializer	tensorflow_scope.py	/^    initializer = tf.constant_initializer(value=3)$/;"	v
+print_function	tensorflow_scope.py	/^from __future__ import print_function$/;"	i
+tensorflow	tensorflow_scope.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_scope.py	/^import tensorflow.compat.v1 as tf$/;"	i
+var1	tensorflow_scope.py	/^    var1 = tf.get_variable(name='var1', shape=[1], dtype=tf.float32, initializer=initializer)$/;"	v
+var2	tensorflow_scope.py	/^    var2 = tf.Variable(name='var2', initial_value=[2], dtype=tf.float32)$/;"	v
+var21	tensorflow_scope.py	/^    var21 = tf.Variable(name='var2', initial_value=[2.1], dtype=tf.float32)$/;"	v
+var22	tensorflow_scope.py	/^    var22 = tf.Variable(name='var2', initial_value=[2.2], dtype=tf.float32)$/;"	v
+var3	tensorflow_scope.py	/^    var3 = tf.get_variable(name='var3', shape=[1], dtype=tf.float32, initializer=initializer)$/;"	v
+var3_reuse	tensorflow_scope.py	/^    var3_reuse = tf.get_variable(name='var3',)$/;"	v
+var4	tensorflow_scope.py	/^    var4 = tf.Variable(name='var4', initial_value=[4], dtype=tf.float32)$/;"	v
+var4_reuse	tensorflow_scope.py	/^    var4_reuse = tf.Variable(name='var4', initial_value=[4], dtype=tf.float32)$/;"	v
+Vgg16	tensorflow_transfer_learning.py	/^class Vgg16:$/;"	c
+__init__	tensorflow_transfer_learning.py	/^    def __init__(self, vgg16_npy_path=None, restore_from=None):$/;"	m	class:Vgg16
+compat	tensorflow_transfer_learning.py	/^import tensorflow.compat.v1 as tf$/;"	i
+conv_layer	tensorflow_transfer_learning.py	/^    def conv_layer(self, bottom, name):$/;"	m	class:Vgg16
+download	tensorflow_transfer_learning.py	/^def download():     # download tiger and kittycat image$/;"	f
+eval	tensorflow_transfer_learning.py	/^def eval():$/;"	f
+io	tensorflow_transfer_learning.py	/^import skimage.io$/;"	i
+load_data	tensorflow_transfer_learning.py	/^def load_data():$/;"	f
+load_img	tensorflow_transfer_learning.py	/^def load_img(path):$/;"	f
+matplotlib	tensorflow_transfer_learning.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	tensorflow_transfer_learning.py	/^import os,matplotlib.pyplot as plt$/;"	i
+max_pool	tensorflow_transfer_learning.py	/^    def max_pool(self, bottom, name):$/;"	m	class:Vgg16
+np	tensorflow_transfer_learning.py	/^import numpy as np$/;"	i
+os	tensorflow_transfer_learning.py	/^import os,matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_transfer_learning.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	tensorflow_transfer_learning.py	/^import os,matplotlib.pyplot as plt$/;"	i
+predict	tensorflow_transfer_learning.py	/^    def predict(self, paths):$/;"	m	class:Vgg16
+save	tensorflow_transfer_learning.py	/^    def save(self, path='.\/for_transfer_learning\/model\/transfer_learn'):$/;"	m	class:Vgg16
+skimage	tensorflow_transfer_learning.py	/^import skimage.io$/;"	i
+skimage	tensorflow_transfer_learning.py	/^import skimage.transform$/;"	i
+tensorflow	tensorflow_transfer_learning.py	/^import tensorflow.compat.v1 as tf$/;"	i
+tf	tensorflow_transfer_learning.py	/^import tensorflow.compat.v1 as tf$/;"	i
+train	tensorflow_transfer_learning.py	/^    def train(self, x, y):$/;"	m	class:Vgg16
+train	tensorflow_transfer_learning.py	/^def train():$/;"	f
+transform	tensorflow_transfer_learning.py	/^import skimage.transform$/;"	i
+urlretrieve	tensorflow_transfer_learning.py	/^from urllib.request import urlretrieve$/;"	i
+vgg_mean	tensorflow_transfer_learning.py	/^    vgg_mean = [103.939, 116.779, 123.68]$/;"	v	class:Vgg16
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

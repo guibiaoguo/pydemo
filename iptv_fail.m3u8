@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:-1 group-title="未分类",CCTV-6 HD-
+http://223.110.243.139/PLTV/3/224/3221225548/index.m3u8
+#EXTINF:-1 group-title="未分类",贵州卫视 HD-
+http://125.210.152.18:9090/live/GZWSHD_H265.m3u8
+#EXTINF:-1 group-title="未分类",四川卫视 HD-
+http://118.123.60.17:8112/syhjcms_hls/10000100000000050000000000000080
+#EXTINF:-1 group-title="未分类",吉林卫视 HD-
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=25&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",海南卫视 HD-
+http://livelyws.chinamcache.com/lyws/zb01.m3u8?auth_key=1593241343-0-0-90b80e74457c94b2015f9428a1cb9b0e
+#EXTINF:-1 group-title="未分类",亚旅卫视-
+http://hls.jingchangkan.tv/jingchangkan/156722438_0HaM/index.m3u8
+#EXTINF:-1 group-title="未分类",香港卫视台-
+http://cctvtxyh5ca.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
+#EXTINF:-1 group-title="未分类",翡翠明珠-
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=12&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",耀才财经-
+http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8
+#EXTINF:-1 group-title="未分类",MTV音乐-
+http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/index_3500_av-b.m3u8

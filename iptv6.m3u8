@@ -1,0 +1,79 @@
+#EXTM3U
+#EXTINF:-1 group-title="未分类",CCTV-5 HD
+http://223.110.243.172/PLTV/3/224/3221227166/index.m3u8
+#EXTINF:-1 group-title="未分类",CCTV-6 HD
+http://223.110.243.139/PLTV/3/224/3221225548/index.m3u8
+#EXTINF:-1 group-title="未分类",CCTV-8 HD
+http://223.110.243.171/PLTV/3/224/3221227204/index.m3u8
+#EXTINF:-1 group-title="未分类",浙江卫视 HD
+http://223.110.243.173/PLTV/3/224/3221227215/index.m3u8
+#EXTINF:-1 group-title="未分类",深圳卫视 HD
+http://223.110.243.171/PLTV/3/224/3221227217/index.m3u8
+#EXTINF:-1 group-title="未分类",安徽卫视 HD
+http://223.110.245.147/ott.js.chinamobile.com/PLTV/3/224/3221225634/index.m3u8
+#EXTINF:-1 group-title="未分类",湖北卫视 HD
+http://223.110.243.171/PLTV/3/224/3221227211/index.m3u8
+#EXTINF:-1 group-title="未分类",辽宁卫视 HD
+http://223.110.245.145/ott.js.chinamobile.com/PLTV/3/224/3221227410/index.m3u8
+#EXTINF:-1 group-title="未分类",河北卫视 HD
+http://223.110.245.149/ott.js.chinamobile.com/PLTV/3/224/3221225840/index.m3u8
+#EXTINF:-1 group-title="未分类",贵州卫视 蓝光
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=41&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",贵州卫视 HD
+http://223.110.245.149/ott.js.chinamobile.com/PLTV/3/224/3221225787/index.m3u8
+#EXTINF:-1 group-title="未分类",贵州卫视 HD
+http://125.210.152.18:9090/live/GZWSHD_H265.m3u8
+#EXTINF:-1 group-title="未分类",四川卫视 HD
+http://118.123.60.17:8112/syhjcms_hls/10000100000000050000000000000080
+#EXTINF:-1 group-title="未分类",四川卫视 HD
+http://scgctvshow.sctv.com/scgc/sctv1deu5453w/index.m3u8
+#EXTINF:-1 group-title="未分类",河南卫视 蓝光
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=19&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",河南卫视 HD
+http://223.110.245.157/ott.js.chinamobile.com/PLTV/3/224/3221225815/index.m3u8
+#EXTINF:-1 group-title="未分类",吉林卫视 HD
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=25&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",吉林卫视 HD
+http://stream4.jlntv.cn/test2/sd/live.m3u8
+#EXTINF:-1 group-title="未分类",海南卫视 HD
+http://livelyws.chinamcache.com/lyws/zb01.m3u8?auth_key=1593241343-0-0-90b80e74457c94b2015f9428a1cb9b0e
+#EXTINF:-1 group-title="未分类",海峡卫视 HD
+http://39.134.65.162/PLTV/88888888/224/3221225500/index.m3u8
+#EXTINF:-1 group-title="未分类",甘肃卫视 HD
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=142&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",甘肃卫视
+http://223.110.245.141/ott.js.chinamobile.com/PLTV/3/224/3221225846/index.m3u8
+#EXTINF:-1 group-title="未分类",青海卫视 HD
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=206&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",云南卫视
+http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221225838/index.m3u8
+#EXTINF:-1 group-title="未分类",宁夏卫视
+http://223.110.245.151/ott.js.chinamobile.com/PLTV/3/224/3221225842/index.m3u8
+#EXTINF:-1 group-title="未分类",新疆卫视
+http://39.134.65.162/PLTV/88888888/224/3221225579/index.m3u8
+#EXTINF:-1 group-title="未分类",内蒙古卫视
+http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221225836/index.m3u8
+#EXTINF:-1 group-title="未分类",内蒙古卫视
+http://223.110.243.136:80/PLTV/3/224/3221225523/index.m3u8
+#EXTINF:-1 group-title="未分类",内蒙古卫视
+http://39.134.65.162/PLTV/88888888/224/3221225577/index.m3u8
+#EXTINF:-1 group-title="未分类",凤凰卫视中文台
+http://117.169.120.138:8080/live/fhchinese/index.m3u8
+#EXTINF:-1 group-title="未分类",亚旅卫视
+http://hls.jingchangkan.tv/jingchangkan/156722438_0HaM/index.m3u8
+#EXTINF:-1 group-title="未分类",香港卫视台
+http://cctvtxyh5ca.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
+#EXTINF:-1 group-title="未分类",优漫卡通
+http://m-tvlmedia.public.bcs.ysten.com/ysten-business/live/youmankaton/1.m3u8
+#EXTINF:-1 group-title="未分类",TVB明珠
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=&Fsv_chan_hls_se_idx=12
+#EXTINF:-1 group-title="未分类",翡翠明珠
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=12&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
+#EXTINF:-1 group-title="未分类",翡翠综合
+http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=188&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv&_res_tag_=video
+#EXTINF:-1 group-title="未分类",耀才财经
+http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8
+#EXTINF:-1 group-title="未分类",MTV音乐
+http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/index_3500_av-b.m3u8
+#EXTINF:-1 group-title="未分类",点掌财经
+http://cclive2.aniu.tv/live/anzb.m3u8

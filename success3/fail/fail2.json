@@ -1,0 +1,365 @@
+[
+    {
+        "bookSourceComment":"",
+        "bookSourceGroup":"💵正版,🚀VPN,失效",
+        "bookSourceName":"💵 AO3",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://archiveofourown.org",
+        "customOrder":-100279,
+        "enabled":false,
+        "enabledExplore":false,
+        "lastUpdateTime":1604941152324,
+        "ruleBookInfo":{
+            "intro":"class.summary module@html&&class.notes module@html&&id.work_endnotes@html",
+            "tocUrl":"@js:if(result.match(/Proceed/)){result=result.match(/href=\"([^\"]+)\".*?Proceed/)[1]}else{result=baseUrl}\nresult+\",{\\\"webView\\\":true}\""
+        },
+        "ruleContent":{
+            "content":"@js:doc=org.jsoup.Jsoup.parse(result.match(/content-->([\\s\\S]+?)<!--\\/(chapter|main)-->/)[1]);\ndoc.select(\"h3\").remove();\nresult=doc.html()"
+        },
+        "ruleExplore":{},
+        "ruleSearch":{
+            "author":"h4@tag.a.1@text",
+            "bookList":"class.work index group@li",
+            "bookUrl":"h4@tag.a.0@href",
+            "intro":"class.tags commas@text&&class.summary@text",
+            "kind":"class.language@text&&class.words@text&&class.chapters@text##(\\d+),(\\d+)##$1$2",
+            "name":"h4@tag.a.0@text"
+        },
+        "ruleToc":{
+            "chapterList":"tag.select@option||tag.html",
+            "chapterName":"class.title heading@text||text",
+            "chapterUrl":"value@js:if(baseUrl.match(/\\d+/)){\nUrl=baseUrl.match(/(.*?\\d+)/)[1];\nresult=Url+\"/chapters/\"+result}else{result=baseUrl};"
+        },
+        "searchUrl":"https://archiveofourown.org/works/search?utf8=%E2%9C%93&work_search%5Bquery%5D={{key}}",
+        "weight":0
+    },
+    {
+        "bookSourceComment":"",
+        "bookSourceGroup":"正版; 发现,失效",
+        "bookSourceName":"黑岩小说",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://heiyan.com",
+        "customOrder":0,
+        "enabled":false,
+        "enabledExplore":true,
+        "exploreUrl":"全部小说::https://www.heiyan.com/web/all/-1/-1/-1/-1/0/{{page}}/100\n免费小说::https://www.heiyan.com/web/all/-1/-1/1/-1/0/{{page}}/100\n收费小说::https://www.heiyan.com/web/all/-1/-1/0/-1/0/{{page}}/100\n完结小说::https://www.heiyan.com/web/all/-1/-1/-1/1/0/{{page}}/100\n连载小说::https://www.heiyan.com/web/all/-1/-1/-1/0/0/{{page}}/100\n悬疑全部::https://www.heiyan.com/web/all/1/-1/-1/-1/0/{{page}}/100\n悬疑免费::https://www.heiyan.com/web/all/1/-1/1/-1/0/{{page}}/100\n悬疑收费::https://www.heiyan.com/web/all/1/-1/0/-1/0/{{page}}/100\n悬疑完结::https://www.heiyan.com/web/all/1/-1/-1/1/0/{{page}}/100\n悬疑连载::https://www.heiyan.com/web/all/1/-1/-1/0/0/{{page}}/100\n历史全部::https://www.heiyan.com/web/all/3/-1/-1/-1/0/{{page}}/100\n历史免费::https://www.heiyan.com/web/all/3/-1/1/-1/0/{{page}}/100\n历史收费::https://www.heiyan.com/web/all/3/-1/0/-1/0/{{page}}/100\n历史完结::https://www.heiyan.com/web/all/3/-1/-1/1/0/{{page}}/100\n历史连载::https://www.heiyan.com/web/all/3/-1/-1/0/0/{{page}}/100\n军事全部::https://www.heiyan.com/web/all/5/-1/-1/-1/0/{{page}}/100\n军事免费::https://www.heiyan.com/web/all/5/-1/1/-1/0/{{page}}/100\n军事收费::https://www.heiyan.com/web/all/5/-1/0/-1/0/{{page}}/100\n军事完结::https://www.heiyan.com/web/all/5/-1/-1/1/0/{{page}}/100\n军事连载::https://www.heiyan.com/web/all/5/-1/-1/0/0/{{page}}/100\n玄幻全部::https://www.heiyan.com/web/all/6/-1/-1/-1/0/{{page}}/100\n玄幻免费::https://www.heiyan.com/web/all/6/-1/1/-1/0/{{page}}/100\n玄幻收费::https://www.heiyan.com/web/all/6/-1/0/-1/0/{{page}}/100\n玄幻完结::https://www.heiyan.com/web/all/6/-1/-1/1/0/{{page}}/100\n玄幻连载::https://www.heiyan.com/web/all/6/-1/-1/0/0/{{page}}/100\n奇幻全部::https://www.heiyan.com/web/all/14/-1/-1/-1/0/{{page}}/100\n奇幻免费::https://www.heiyan.com/web/all/14/-1/1/-1/0/{{page}}/100\n奇幻收费::https://www.heiyan.com/web/all/14/-1/0/-1/0/{{page}}/100\n奇幻完结::https://www.heiyan.com/web/all/14/-1/-1/1/0/{{page}}/100\n奇幻连载::https://www.heiyan.com/web/all/14/-1/-1/0/0/{{page}}/100\n仙侠全部::https://www.heiyan.com/web/all/7/-1/-1/-1/0/{{page}}/100\n仙侠免费::https://www.heiyan.com/web/all/7/-1/1/-1/0/{{page}}/100\n仙侠收费::https://www.heiyan.com/web/all/7/-1/0/-1/0/{{page}}/100\n仙侠完结::https://www.heiyan.com/web/all/7/-1/-1/1/0/{{page}}/100\n仙侠连载::https://www.heiyan.com/web/all/7/-1/-1/0/0/{{page}}/100\n武侠全部::https://www.heiyan.com/web/all/8/-1/-1/-1/0/{{page}}/100\n武侠免费::https://www.heiyan.com/web/all/8/-1/1/-1/0/{{page}}/100\n武侠收费::https://www.heiyan.com/web/all/8/-1/0/-1/0/{{page}}/100\n武侠完结::https://www.heiyan.com/web/all/8/-1/-1/1/0/{{page}}/100\n武侠连载::https://www.heiyan.com/web/all/8/-1/-1/0/0/{{page}}/100\n科幻全部::https://www.heiyan.com/web/all/10/-1/-1/-1/0/{{page}}/100\n科幻免费::https://www.heiyan.com/web/all/10/-1/1/-1/0/{{page}}/100\n科幻收费::https://www.heiyan.com/web/all/10/-1/0/-1/0/{{page}}/100\n科幻完结::https://www.heiyan.com/web/all/10/-1/-1/1/0/{{page}}/100\n科幻连载::https://www.heiyan.com/web/all/10/-1/-1/0/0/{{page}}/100\n游戏全部::https://www.heiyan.com/web/all/9/-1/-1/-1/0/{{page}}/100\n游戏免费::https://www.heiyan.com/web/all/9/-1/1/-1/0/{{page}}/100\n游戏收费::https://www.heiyan.com/web/all/9/-1/0/-1/0/{{page}}/100\n游戏完结::https://www.heiyan.com/web/all/9/-1/-1/1/0/{{page}}/100\n游戏连载::https://www.heiyan.com/web/all/9/-1/-1/0/0/{{page}}/100\n同人全部::https://www.heiyan.com/web/all/16/-1/-1/-1/0/{{page}}/100\n同人免费::https://www.heiyan.com/web/all/16/-1/1/-1/0/{{page}}/100\n同人收费::https://www.heiyan.com/web/all/16/-1/0/-1/0/{{page}}/100\n同人完结::https://www.heiyan.com/web/all/16/-1/-1/1/0/{{page}}/100\n同人连载::https://www.heiyan.com/web/all/16/-1/-1/0/0/{{page}}/100\n社会全部::https://www.heiyan.com/web/all/25/-1/-1/-1/0/{{page}}/100\n社会免费::https://www.heiyan.com/web/all/25/-1/1/-1/0/{{page}}/100\n社会收费::https://www.heiyan.com/web/all/25/-1/0/-1/0/{{page}}/100\n社会完结::https://www.heiyan.com/web/all/25/-1/-1/1/0/{{page}}/100\n社会连载::https://www.heiyan.com/web/all/25/-1/-1/0/0/{{page}}/100\n古言全部::https://www.heiyan.com/web/all/37/-1/-1/-1/0/{{page}}/100\n古言免费::https://www.heiyan.com/web/all/37/-1/1/-1/0/{{page}}/100\n古言收费::https://www.heiyan.com/web/all/37/-1/0/-1/0/{{page}}/100\n古言完结::https://www.heiyan.com/web/all/37/-1/-1/1/0/{{page}}/100\n古言连载::https://www.heiyan.com/web/all/37/-1/-1/0/0/{{page}}/100",
+        "lastUpdateTime":0,
+        "ruleBookInfo":{
+            "author":"//strong/text()",
+            "coverUrl":"//*[@class=\"pic\"]/a/img/@src",
+            "intro":"//pre[@class=\"note\"]/text()",
+            "name":"//h1",
+            "tocUrl":"//a[text()=\"开始阅读\"]/@href"
+        },
+        "ruleContent":{
+            "content":"$.chapter.htmlContent<js>result.replace(/<.*?>/g,'').replace(/\\r/g,'\\n　　')</js>"
+        },
+        "ruleExplore":{},
+        "ruleSearch":{
+            "author":"{{baseUrl.indexOf('?')>-1?'@json:authorname<js>String(result).replace(/<.*?>/g,\"\")</js>':'//*[@class=\"author\"]//a/text()'}}",
+            "bookList":"{{baseUrl.indexOf('?')>-1?'@json:data.content[*]':'//*[@id=\"resultDiv\"]/tr'}}",
+            "bookUrl":"{{baseUrl.indexOf('?')>-1?'@json:id':'//a[@class=\"title\"]/@href'}}<js>'https://www.heiyan.com/book/'+String(result).match(/\\d+/)[0]</js>",
+            "coverUrl":"{{baseUrl.indexOf('?')>-1?'@json:id':'//a[@class=\"title\"]/@href'}}<js>'https://b.heiyanimg.com/book/'+String(result).match(/\\d+/)[0]+'.jpg'</js>",
+            "kind":"{{baseUrl.indexOf('?')>-1?'@json:sortname<js>String(result).replace(/<.*?>/g,\"\")</js>':'//td[4]/text()<js>String(result)+\"字\"</js>'}}",
+            "lastChapter":"{{baseUrl.indexOf('?')>-1?'@json:lastchaptername':'//a[@class=\"chapter\"]/text()'}}",
+            "name":"{{baseUrl.indexOf('?')>-1?'@json:name<js>String(result).replace(/<.*?>/g,\"\")</js>':'//a[@class=\"title\"]/text()'}}"
+        },
+        "ruleToc":{
+            "chapterList":"//li[span]/a",
+            "chapterName":"<js>(/isvip/.test(String(result))?'[表情]':'') + String(result).match(/>(.*?)</)[1]</js>",
+            "chapterUrl":"//@href<js>'https://a.heiyan.com/ajax/chapter/content/'+result.match(/\\d+$/)[0]</js>"
+        },
+        "searchUrl":"https://search.heiyan.com/web/search?queryString={{key}}&page={{page}}",
+        "weight":0
+    },
+    {
+        "bookSourceComment":"",
+        "bookSourceGroup":",失效",
+        "bookSourceName":"万书网-仅发现",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://m.afs360.com",
+        "bookUrlPattern":"",
+        "customOrder":0,
+        "enabled":true,
+        "enabledExplore":true,
+        "exploreUrl":"都市异能::https://m.afs360.com/dushi/<index,index_{{page}}>.html\n言情小说::https://m.afs360.com/yq/<index,index_{{page}}>.html\n穿越重生::https://m.afs360.com/mm/cy/<index,index_{{page}}>.html\n乡村艳情::https://m.afs360.com/xy/<index,index_{{page}}>.html\n武侠仙侠::https://m.afs360.com/wx/<index,index_{{page}}>.html\n玄幻修真::https://m.afs360.com/xh/<index,index_{{page}}>.html\n游戏竞技::https://m.afs360.com/wy/<index,index_{{page}}>.html\n科幻末世::https://m.afs360.com/kh/<index,index_{{page}}>.html\n恐怖灵异::https://m.afs360.com/kb/<index,index_{{page}}>.html\n侦探推理::https://m.afs360.com/zt/<index,index_{{page}}>.html\n历史军事::https://m.afs360.com/ls/<index,index_{{page}}>.html\n文学名著::https://m.afs360.com/wenxue/<index,index_{{page}}>.html\n耽美小说::https://m.afs360.com/mm/dm/<index,index_{{page}}>.html\n其他类型::https://m.afs360.com/qita/<index,index_{{page}}>.html",
+        "lastUpdateTime":0,
+        "loginUrl":"",
+        "ruleBookInfo":{
+            "coverUrl":"class.main@class.item mt10.0@class.fmm@tag.img@src",
+            "intro":"class.main@class.item mt10.0@class.bookdes.0@class.bookdesdd@text"
+        },
+        "ruleContent":{
+            "content":""
+        },
+        "ruleExplore":{
+            "author":"class.bookauthor@text",
+            "bookList":"class.main@class.item mt10.2@ul!0||class.lbox",
+            "bookUrl":"class.bookname@tag.a@href||class.first@tag.p.0@tag.a.0@href",
+            "name":"class.bookname@tag.a@text||class.first@tag.p.0@tag.a.0@text"
+        },
+        "ruleSearch":{
+            "bookList":"//table[1]/tbody/tr/td/table[2]/tbody/tr/td/h2",
+            "name":"class.l@text"
+        },
+        "ruleToc":{},
+        "searchUrl":"https://m.afs360.com/e/sch/index.php?page={{page}}&keyboard={{key}}&field=1&totalnum=354",
+        "weight":0
+    },
+    {
+        "bookSourceComment":"",
+        "bookSourceGroup":"🌐外语,失效",
+        "bookSourceName":"🌐 小说馆",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://novelepubs.com",
+        "customOrder":-41506,
+        "enabled":false,
+        "enabledExplore":false,
+        "lastUpdateTime":1602994408399,
+        "ruleBookInfo":{
+            "author":"[name=\"og:author\"]@content",
+            "coverUrl":"[name=\"og:image\"]@content",
+            "intro":"[name=\"description\"]@content",
+            "kind":"class.genre@tag.p@text",
+            "lastChapter":"id.accordion@tag.a.-1@text",
+            "name":"[name=\"og:title\"]@content"
+        },
+        "ruleContent":{
+            "content":"id.chr-content@html",
+            "imageStyle":"0"
+        },
+        "ruleExplore":{},
+        "ruleSearch":{
+            "bookList":"class.novel item",
+            "bookUrl":"tag.a.1@href",
+            "coverUrl":"tag.img@data-src",
+            "name":"tag.a.1@text"
+        },
+        "ruleToc":{
+            "chapterList":"id.accordion@tag.a",
+            "chapterName":"text",
+            "chapterUrl":"href"
+        },
+        "searchUrl":"https://novelepubs.com/search?q={{key}}",
+        "weight":0
+    },
+    {
+        "bookSourceComment":"",
+        "bookSourceGroup":"🚬刘备,失效",
+        "bookSourceName":"🚬 花月文库",
+        "bookSourceType":0,
+        "bookSourceUrl":"http://www.huayuewenku.com",
+        "customOrder":-18322,
+        "enabled":false,
+        "enabledExplore":false,
+        "exploreUrl":"经典::/jingdian/<,index_{{page}}.html>\n现代::/xiandai/<,index_{{page}}.html>\n古代::/gudai/<,index_{{page}}.html>\n穿越::/chuanyue/<,index_{{page}}.html>\n GL ::/gl/<,index_{{page}}.html>\n同人::/tongren/<,index_{{page}}.html>\n辣文::/lawen/<,index_{{page}}.html>\n甜宠::/tianchong/<,index_{{page}}.html>",
+        "lastUpdateTime":0,
+        "ruleBookInfo":{
+            "author":"class.author@text##作者.",
+            "init":"",
+            "kind":"class.container.1@tag.a.1@text",
+            "lastChapter":"tag.option.-1@text",
+            "name":"tag.h1@text##.*\\《|\\》.*|花月文库\\s",
+            "wordCount":"class.time@text##本书."
+        },
+        "ruleContent":{
+            "content":"class.entry-content@html",
+            "imageStyle":"0"
+        },
+        "ruleExplore":{
+            "author":"tag.span.0@text##作者.|时间.",
+            "bookList":"class.content-list@tag.li",
+            "bookUrl":"tag.a.0@href",
+            "intro":"tag.p.0@textNodes##.*简介.|.*文案.",
+            "kind":"class.post-tags@tag.a@text##标签.",
+            "name":"tag.a.0@text##.*\\《|\\》.*|花月文库\\s",
+            "wordCount":""
+        },
+        "ruleSearch":{
+            "author":"tag.span.1@text##作者.",
+            "bookList":"class.content-list@tag.li",
+            "bookUrl":"tag.a.0@href",
+            "intro":"tag.p.0@textNodes##.*简介.|.*文案.",
+            "kind":"tag.span.0@text&&class.post-tags@tag.a@text##标签.|时间.",
+            "name":"tag.a.0@text##.*\\《|\\》.*|花月文库\\s"
+        },
+        "ruleToc":{
+            "chapterList":"tag.select@tag.option||tag.h1",
+            "chapterName":"text\n<js>\nif(result.length>20){result=result.substr(0,16);}\nelse{result}\n</js>",
+            "chapterUrl":"value||class.entry-content@html"
+        },
+        "searchUrl":"/e/search/index.php,{\n\"charset\": \"utf-8\",\n\"method\": \"POST\",\n\"body\": \"keyboard={{key}}&show=title&tempid=1&tbname=news&mid=1&dopost=search\",\n\"headers\": {\"User-Agent\": \"Mozilla/5.0 (Linux; Android ;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36\"}\n}",
+        "weight":0
+    },
+    {
+        "bookSourceComment":"",
+        "bookSourceGroup":"💵正版,🚀VPN,失效",
+        "bookSourceName":"💵 AO3文学✈",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://www.iao3.com",
+        "customOrder":-100272,
+        "enabled":false,
+        "enabledExplore":false,
+        "header":"{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\"\n}",
+        "lastUpdateTime":1604941156072,
+        "ruleBookInfo":{
+            "coverUrl":"class.bookcover hidden-xs@img@src",
+            "intro":"class.bookintro.0@text",
+            "kind":"",
+            "tocUrl":"",
+            "wordCount":""
+        },
+        "ruleContent":{
+            "content":"class.readcontent@textNodes",
+            "imageStyle":"0",
+            "replaceRegex":"##作者有话要说(.|\\n)*"
+        },
+        "ruleExplore":{},
+        "ruleSearch":{
+            "author":"class.author.0@text",
+            "bookList":"class.bookbox",
+            "bookUrl":"class.bookname@tag.a@href||class.del_but@tag.a@href",
+            "intro":"class.update@text##简介：",
+            "lastChapter":"class.cat@tag.a@text",
+            "name":"tag.h4.0@text",
+            "wordCount":""
+        },
+        "ruleToc":{
+            "chapterList":"id.list-chapterAll@tag.dd",
+            "chapterName":"text",
+            "chapterUrl":"tag.a@href"
+        },
+        "searchUrl":"https://www.iao3.com/modules/article/search.php,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "weight":0
+    },
+    {
+        "bookSourceGroup":"🔰 普通,失效",
+        "bookSourceName":"🔰 爱读中文",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://www.iduzw.com",
+        "bookUrlPattern":"",
+        "customOrder":471,
+        "enabled":false,
+        "enabledExplore":false,
+        "exploreUrl":"玄幻::/xclass/1/{{page}}/\n仙侠::/xclass/2/{{page}}/\n都市::/xclass/3/{{page}}/\n历史::/xclass/4/{{page}}/\n网游::/xclass/5/{{page}}/\n科幻::/xclass/6/{{page}}/\n耽美::/xclass/7/{{page}}/\n穿越::/xclass/8/{{page}}/\n推理::/xclass/9/{{page}}/\n其他::/xclass/10/{{page}}/",
+        "header":"{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36\"\n}",
+        "lastUpdateTime":0,
+        "loginUrl":"",
+        "ruleBookInfo":{
+            "coverUrl":"class.lazy@data-original",
+            "lastChapter":"class.diswap info-main-wap border3-1@tag.a.2@text##最新章节："
+        },
+        "ruleContent":{
+            "content":"class.content@html",
+            "imageStyle":"0",
+            "nextContentUrl":"class.read_nav reader-bottom@tag.a.-1@href"
+        },
+        "ruleExplore":{
+            "author":"tag.span.1@text##\\ .*",
+            "bookList":"class.border3-1!1@a",
+            "bookUrl":"tag.a.0@href",
+            "kind":"tag.em.0@text##\\[|\\]|小说",
+            "lastChapter":"tag.em.2@text",
+            "name":"tag.em.1@text"
+        },
+        "ruleSearch":{
+            "author":"class.flex flex-between commend-title@tag.span@text",
+            "bookList":"class.border3 commend flex flex-between category-commend@tag.a",
+            "bookUrl":"href",
+            "coverUrl":"img@data-original||img@src",
+            "name":"class.flex flex-between commend-title@tag.h3@text"
+        },
+        "ruleToc":{
+            "chapterList":"class.info-chapters flex flex-wrap@tag.a",
+            "chapterName":"text",
+            "chapterUrl":"href"
+        },
+        "searchUrl":"https://www.iduzw.com/search/?searchkey={{key}}&Submit=",
+        "weight":0
+    },
+    {
+        "bookSourceComment":"",
+        "bookSourceGroup":"发现可用; 失效",
+        "bookSourceName":"创意市集",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://www.popo.tw",
+        "customOrder":0,
+        "enabled":true,
+        "enabledExplore":true,
+        "exploreUrl":"濃情館::https://www.popo.tw/cates/1/subs\\?type=hot&page={{page}}\n異想館::https://www.popo.tw/cates/2/subs\\?type=hot&page={{page}}\n綜合館::https://www.popo.tw/cates/3/subs\\?type=hot&page={{page}}\nnull",
+        "lastUpdateTime":0,
+        "ruleBookInfo":{
+            "intro":"class.book_intro@text"
+        },
+        "ruleContent":{
+            "content":""
+        },
+        "ruleExplore":{},
+        "ruleSearch":{
+            "author":"class.author@text",
+            "bookList":"class.box",
+            "bookUrl":"class.right@tag.a@href||",
+            "coverUrl":"class.left@tag.img@src",
+            "lastChapter":"class.right@tag.a.2@text",
+            "name":"class.bname@text"
+        },
+        "ruleToc":{},
+        "searchUrl":"https://www.popo.tw/search?searchtype=book&name={{key}}",
+        "weight":0
+    },
+    {
+        "bookSourceGroup":"🎉 精品,失效",
+        "bookSourceName":"🎉 小说柜",
+        "bookSourceType":0,
+        "bookSourceUrl":"https://www.xiaoshuogui.com",
+        "bookUrlPattern":"https?://xiaoshuogui.com/\\d+/",
+        "customOrder":59,
+        "enabled":false,
+        "enabledExplore":false,
+        "exploreUrl":"言情女生::/modules/article/articlelist.php?class=1&page={{page}}\n玄幻奇幻::/modules/article/articlelist.php?class=2&page={{page}}\n都市青春::/modules/article/articlelist.php?class=3&page={{page}}\n武侠仙侠::/modules/article/articlelist.php?class=4&page={{page}}\n耽美同人::/modules/article/articlelist.php?class=5&page={{page}}\n科幻灵异::/modules/article/articlelist.php?class=6&page={{page}}\n轻の小说::/modules/article/articlelist.php?class=7&page={{page}}\n历史军事::/modules/article/articlelist.php?class=8&page={{page}}",
+        "lastUpdateTime":0,
+        "loginUrl":"",
+        "ruleBookInfo":{
+            "author":"[property=\"og:novel:author\"]@content",
+            "coverUrl":"[property=\"og:image\"]@content",
+            "intro":"id.bookintro@textNodes",
+            "kind":"[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+            "lastChapter":"[property=\"og:novel:latest_chapter_name\"]@content",
+            "name":"[property=\"og:novel:book_name\"]@content",
+            "wordCount":"[property=\"og:novel:update_time\"]@content"
+        },
+        "ruleContent":{
+            "content":"id.TextContent@textNodes##本书首发.*",
+            "imageStyle":"0"
+        },
+        "ruleExplore":{
+            "author":"",
+            "bookList":"id.sitebox@dl",
+            "bookUrl":"h3@tag.a@href",
+            "coverUrl":"tag.img@_src",
+            "intro":"class.book_des@textNodes",
+            "kind":"class.book_other.0@tag.span.0@text&&class.book_other.0@tag.span.1@text",
+            "lastChapter":"class.book_other.1@tag.a@text",
+            "name":"h3@tag.a@text",
+            "wordCount":"class.book_other.0@tag.span.2@text@js:result+'字'"
+        },
+        "ruleSearch":{
+            "bookList":"id.nr",
+            "bookUrl":"tag.a.1@href##/book",
+            "coverUrl":"img@_src",
+            "intro":"class.book_des@textNodes",
+            "kind":"class.book_other.0@tag.span.0@text&&class.book_other.0@tag.span.1@text",
+            "lastChapter":"class.book_other.1@tag.a@text",
+            "name":"tag.a.1@text",
+            "wordCount":"class.book_other.0@tag.span.2@text@js:result+'字'"
+        },
+        "ruleToc":{
+            "chapterList":"id.chapterList@tag.li@tag.a",
+            "chapterName":"text",
+            "chapterUrl":"href",
+            "updateTime":""
+        },
+        "searchUrl":"/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+        "weight":0
+    }
+]

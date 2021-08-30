@@ -1,3 +1,4 @@
+#迭代器
 class Fib(object):
     """docstring for Fib"""
     def __init__(self):

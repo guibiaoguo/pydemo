@@ -23,7 +23,7 @@ filter_list = ['你好，欢迎加入 Quantumu', '\n']
 blacklist = [1388464914,]
 donwload_all_chat = False # 监控所有你加入的频道，收到的新消息如果包含媒体都会下载，默认关闭
 filter_file_name = []
-pageSize=48
+pageSize=51
 #***********************************************************************************#
 
 
@@ -103,6 +103,24 @@ def select(name, url):
     conn.close()
     return values
 
+def saveVideo(name, url):
+    conn = mysql.connector.connect(user='root', password='root', database='test') 
+    cursor = conn.cursor()
+    cursor.execute('insert into video (name,url,country) values (%s, %s, %s)', [name, url,'Korea'])
+    print(cursor.rowcount)
+    conn.commit()
+    cursor.close()
+    conn.close()
+def selectVideo(name, url):
+    conn = mysql.connector.connect(user='root', password='root', database='test') 
+    cursor = conn.cursor()
+    cursor.execute('select * from video where name = %s and url = %s', (name, url))
+    values = cursor.fetchall()
+    print(values)
+    cursor.close()
+    conn.close()
+    return values
+
 def handler(page_url,pageSize, imgq, count=0):
     
     for pageNo in range(1,pageSize+1):
@@ -134,6 +152,7 @@ def handler(page_url,pageSize, imgq, count=0):
                 print(furl)
                 time.sleep(5)
                 try:
+                    saveVideo(str(title),furl[0]['href'])
                     f_page=requests.get(url=furl[0]['href'])
                 except Exception as e:
                     print("获取下载地址异常")
@@ -167,6 +186,7 @@ def handler(page_url,pageSize, imgq, count=0):
     #                 print('保存%s %s到mp4_queue' %(file,file_name))
             except Exception as e:
                 print("远程关闭连接")
+                print(e)
                 time.sleep(10)
 
             # break

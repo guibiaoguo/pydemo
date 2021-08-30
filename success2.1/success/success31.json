@@ -1,0 +1,32 @@
+[
+    {
+        "bookSourceGroup":"正版",
+        "bookSourceName":"起点中文💯",
+        "bookSourceType":"",
+        "bookSourceUrl":"https://www.qidian.com#1",
+        "enable":true,
+        "httpUserAgent":"",
+        "ruleBookAuthor":"class.book-info@tag.h1@tag.span@tag.a@text",
+        "ruleBookContent":"class.read-content@tag.p@textNodes",
+        "ruleBookName":"class.book-info@tag.h1@tag.em@text",
+        "ruleChapterList":"class.volume-wrap@class.volume@tag.ul@tag.li",
+        "ruleChapterName":"tag.a@text",
+        "ruleChapterUrl":"",
+        "ruleChapterUrlNext":"",
+        "ruleContentUrl":"tag.a@href",
+        "ruleContentUrlNext":"",
+        "ruleCoverUrl":"",
+        "ruleFindUrl":"月票榜::https://www.qidian.com/rank/yuepiao?page=searchPage&&推荐榜::https://www.qidian.com/rank/recom?style=1&page=searchPage&&强推榜::https://www.qidian.com/book/strongrec?style=1&page=searchPage&&收藏榜::https://www.qidian.com/rank/collect?style=1&page=searchPage&&打赏榜::https://www.qidian.com/rank/vipreward?style=1&page=searchPage&&热销榜::https://www.qidian.com/rank/hotsales?style=1&page=searchPage&&更新榜::https://www.qidian.com/rank/vipup?style=1&page=searchPage&&签约作家新书榜::https://www.qidian.com/rank/signnewbook?style=1&&公众作者新书榜::https://www.qidian.com/rank/pubnewbook?style=1&page=searchPage&&新人签约新书榜::https://www.qidian.com/rank/newsign?style=1&page=searchPage&&新人作者新书榜::https://www.qidian.com/rank/newauthor?&&原创风云榜::https://www.qidian.com/rank/yuepiao?style=1&page=searchPage&&24小时热销榜::https://www.qidian.com/rank/hotsales?style=1&page=searchPage&&推荐票榜::https://www.qidian.com/rank/recom?style=1&page=searchPage&&",
+        "ruleIntroduce":"class.book-intro@tag.p@text",
+        "ruleSearchAuthor":"class.book-mid-info@class.author@tag.a.0@text|tag.a.2@text|tag.span@text",
+        "ruleSearchCoverUrl":"class.book-img-box@tag.img@src",
+        "ruleSearchKind":"class.book-mid-info@class.author@tag.a.1@text|tag.a.0@text",
+        "ruleSearchLastChapter":"class.book-mid-info@class.update@tag.a.0@text#最新更新",
+        "ruleSearchList":"class.book-img-text@tag.ul@tag.li|class.strongrec-list book-list-wrap@class.book-list@tag.li",
+        "ruleSearchName":"class.book-mid-info@tag.h4@tag.a@text|tag.a.1@text",
+        "ruleSearchNoteUrl":"class.book-mid-info@tag.h4@tag.a@href|tag.a.1@href",
+        "ruleSearchUrl":"https://www.qidian.com/search?kw=searchKey&page=searchPage",
+        "serialNumber":0,
+        "weight":126
+    }
+]

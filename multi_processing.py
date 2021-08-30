@@ -1,4 +1,4 @@
-from multiprocessing import Process
+from multiprocessing import Process,Queue,Pool
 import os
 
 def run_proc(name):
@@ -11,3 +11,21 @@ if __name__ == '__main__':
     p.start()
     p.join()
     print('Child process end.')
+
+def job(q):
+    res=0
+    for i in range(1000):
+        res+=i+i**2+i**3
+    q.put(res)    #queue
+
+if __name__=='__main__':
+    q = Queue()
+    p1 = Process(target=job,args=(q,))
+    p2 = Process(target=job,args=(q,))
+    p1.start()
+    p2.start()
+    p1.join()
+    p2.join()
+    res1 = q.get()
+    res2 = q.get()
+    print(res1+res2)
