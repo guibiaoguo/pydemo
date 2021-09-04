@@ -21,7 +21,7 @@ from keras.datasets import mnist
 from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import SimpleRNN, Activation, Dense
-from keras.optimizers import Adam
+# from keras.optimizers import Adam
 
 TIME_STEPS = 28     # same as the height of the image
 INPUT_SIZE = 28     # same as the width of the image
@@ -46,7 +46,9 @@ y_test = np_utils.to_categorical(y_test, num_classes=10)
 model = Sequential()
 
 # RNN cell
+
 model.add(SimpleRNN(
+    units=64,
     # for batch_input_shape, if using tensorflow as the backend, we have to put None for the batch_size.
     # Otherwise, model.evaluate() will get error.
     batch_input_shape=(None, TIME_STEPS, INPUT_SIZE),       # Or: input_dim=INPUT_SIZE, input_length=TIME_STEPS,
@@ -60,7 +62,7 @@ model.add(Activation('softmax'))
 
 # optimizer
 adam = Adam(LR)
-model.compile(optimizer=adam,
+model.compile(optimizer='adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 

@@ -16,7 +16,7 @@ from keras.datasets import mnist
 from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import Dense, Activation
-from keras.optimizers import RMSprop
+from keras.optimizer_v1 import RMSprop
 
 # download the mnist to the path '~/.keras/datasets/' if it is the first time to be called
 # X shape (60,000 28x28), y shape (10,000, )
@@ -40,7 +40,7 @@ model = Sequential([
 rmsprop = RMSprop(lr=0.001, rho=0.9, epsilon=1e-08, decay=0.0)
 
 # We add metrics to get more results you want to see
-model.compile(optimizer=rmsprop,
+model.compile(optimizer='rmsprop',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 

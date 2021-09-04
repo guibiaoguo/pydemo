@@ -20,7 +20,7 @@ from keras.datasets import mnist
 from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Convolution2D, MaxPooling2D, Flatten
-from keras.optimizers import Adam
+from keras.optimizer_v1 import Adam
 
 # download the mnist to the path '~/.keras/datasets/' if it is the first time to be called
 # training X shape (60000, 28x28), Y shape (60000, ). test X shape (10000, 28x28), Y shape (10000, )
@@ -74,7 +74,7 @@ model.add(Activation('softmax'))
 adam = Adam(lr=1e-4)
 
 # We add metrics to get more results you want to see
-model.compile(optimizer=adam,
+model.compile(optimizer='Adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 
